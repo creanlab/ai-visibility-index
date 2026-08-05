@@ -77,44 +77,200 @@ def read_json(site_key, rel, domain=None):
         return json.loads(r.read().decode("utf-8"))
 
 
+# Every tool here reads a published file and returns it. Nothing writes, nothing
+# reaches outside these two sites, and the same call returns the same bytes until
+# the next weekly release — which is exactly what these four hints state. They are
+# not decoration: without them a client must assume the worst and interrupt the
+# user for confirmation before a read.
+#
+# The hints and the prose must never disagree. Saying the server "queries the
+# engines live" while declaring openWorldHint false would be a contradiction, and
+# it would be a lie besides: measurement happens weekly in a separate pipeline,
+# and these tools only serve what that pipeline published.
+READ_ONLY = {
+    "readOnlyHint": True,
+    "destructiveHint": False,
+    "idempotentHint": True,
+    "openWorldHint": False,
+}
+
+_ENTRY = {
+    "type": "object",
+    "properties": {
+        "brand": {"type": "string", "description": "Brand name as published."},
+        "slug": {"type": "string", "description": "Identifier used by get_brand_visibility."},
+        "rank": {"type": "integer", "description": "Position in this release, 1 = most named."},
+        "visibility_score": {"type": "number",
+                             "description": "Share of answer, percent of panel prompts naming the brand."},
+        "per_engine": {"type": "object", "additionalProperties": {"type": "number"},
+                       "description": "Share of answer per engine, same scale."},
+        "commercial_intent": {"type": "number",
+                              "description": "How commercially loaded the brand's category demand is."},
+        "quadrant": {"type": "string",
+                     "description": "Position on visibility against commercial intent."},
+        "is_client": {"type": "boolean",
+                      "description": "Whether the brand is a client of the publisher. Placement "
+                                     "cannot be bought; this flag makes that checkable."},
+    },
+    "required": ["brand", "slug", "rank", "visibility_score"],
+}
+
+_RELEASE_META = {
+    "measured_at": {"type": "string", "description": "Date of this release, ISO 8601."},
+    "panel_version": {"type": "integer",
+                      "description": "Prompt panel version. Figures from different versions are "
+                                     "not comparable."},
+    "engines": {"type": "array", "items": {"type": "string"},
+                "description": "Engines measured in this release."},
+    "niche_title": {"type": "string"},
+}
+
+
 def tools_for(cfg):
-    b, n = cfg["brand"], cfg["niche"]
+    b, n, d = cfg["brand"], cfg["niche"], cfg["domain"]
+    n_note = (f"Covers {n} only; the sibling index at "
+              f"{'dablock.ai' if d == 'dabyte.ai' else 'dabyte.ai'} covers the other niche.")
+    freshness = ("Re-measured weekly, so the same call returns the same figures until the next "
+                 "release. Data is CC BY 4.0 and free: no key, no account, no rate limit — cite "
+                 f"the release date and {d} when quoting a number.")
     return [
         {
             "name": "get_visibility_index",
-            "description": (f"Full {b} AI Visibility Index for {n}: every tracked brand with "
-                            f"rank, share of answer overall and per engine (ChatGPT, Perplexity, "
-                            f"Gemini), commercial intent and quadrant. Weekly measurement."),
+            "title": f"{b} AI Visibility Index — full table",
+            "description": (
+                f"The whole current release in one call: every tracked brand in {n} with its rank, "
+                f"share of answer overall and per engine, commercial intent and quadrant. Share of "
+                f"answer is the percentage of a fixed panel of category buyer prompts in which an "
+                f"engine names the brand.\n\n"
+                f"Use this when the question is about the field — who leads, who is absent, how the "
+                f"category looks. It is one response of roughly 8 KB for {'20' if d == 'dabyte.ai' else '24'} "
+                f"brands, so prefer it over calling get_brand_visibility repeatedly.\n\n"
+                f"Do NOT use it for one named brand (get_brand_visibility is the direct answer), for "
+                f"movement over time (get_history holds the series; a single release cannot show a "
+                f"trend), or to audit a website's own AI visibility — this is a measured dataset "
+                f"about third-party brands, not a site audit. {n_note}\n\n{freshness}"),
             "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+            "outputSchema": {
+                "type": "object",
+                "properties": dict(_RELEASE_META, entries={"type": "array", "items": _ENTRY}),
+                "required": ["measured_at", "entries"],
+            },
+            "annotations": dict(READ_ONLY, title=f"{b} AI Visibility Index — full table"),
         },
         {
             "name": "get_brand_visibility",
-            "description": ("One brand's AI visibility: share of answer per engine, rank, "
-                            "quadrant, and how many panel prompts name it. Use list_tracked_brands "
-                            "for valid slugs."),
+            "title": "Look up one brand",
+            "description": (
+                f"One brand's standing in the current {b} release: share of answer per engine, rank, "
+                f"quadrant, how many panel prompts name it, and which ones.\n\n"
+                f"Use this when a specific brand is named. Takes a slug, not a display name — call "
+                f"list_tracked_brands first if you are unsure, or read the slug from "
+                f"get_visibility_index.\n\n"
+                f"An unknown slug is not a failure to hide: the error names every valid slug, so a "
+                f"second attempt can succeed. A brand absent from the index has not been measured at "
+                f"all, which is different from a measured zero. Only {n} brands are tracked. "
+                f"For the field as a whole use get_visibility_index; for this brand over time, "
+                f"get_history.\n\n{freshness}"),
             "inputSchema": {
                 "type": "object",
-                "properties": {"slug": {"type": "string",
-                                        "description": "Brand slug, e.g. 'slack' or 'coinbase'"}},
+                "properties": {"slug": {
+                    "type": "string", "pattern": "^[a-z0-9-]{1,80}$",
+                    "description": ("Brand slug, lowercase with hyphens — 'slack', 'coinbase', "
+                                    "'monday-com'. Not the display name."),
+                }},
                 "required": ["slug"], "additionalProperties": False,
             },
+            "outputSchema": {
+                "type": "object",
+                "properties": dict(_RELEASE_META, **_ENTRY["properties"],
+                                   prompts={"type": "array", "items": {"type": "string"},
+                                            "description": "Panel prompts in which the brand is named."}),
+                "required": ["brand", "slug", "rank", "visibility_score", "measured_at"],
+            },
+            "annotations": dict(READ_ONLY, title="Look up one brand"),
         },
         {
             "name": "list_tracked_brands",
-            "description": f"All brands tracked in the {b} index, with their slugs.",
+            "title": "List tracked brands and slugs",
+            "description": (
+                f"The names and slugs of every brand in the {b} index — a lookup table, nothing else. "
+                f"No scores, no ranks.\n\n"
+                f"Use it for two things: to turn a brand name into the slug get_brand_visibility "
+                f"needs, and to answer whether a brand is tracked at all.\n\n"
+                f"Do NOT use it when you want figures — get_visibility_index returns the same brands "
+                f"with their full measurements in a single call, so calling this one first is a "
+                f"wasted round trip. Absence here means the brand is not measured, not that it scores "
+                f"zero. {n_note}\n\n{freshness}"),
             "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+            "outputSchema": {
+                "type": "object",
+                "properties": {"brands": {"type": "array", "items": {
+                    "type": "object",
+                    "properties": {"brand": {"type": "string"}, "slug": {"type": "string"}},
+                    "required": ["brand", "slug"]}}},
+                "required": ["brands"],
+            },
+            "annotations": dict(READ_ONLY, title="List tracked brands and slugs"),
         },
         {
             "name": "get_history",
-            "description": ("Full measurement history: share of answer per brand at every "
-                            "published weekly measurement (comparable within one panel version)."),
+            "title": "Full measurement time series",
+            "description": (
+                f"Every {b} release ever published, as a series per brand: share of answer at each "
+                f"weekly measurement with the date and panel version it was taken under.\n\n"
+                f"Use this for any question about change — is a brand rising, when did it enter the "
+                f"index, how volatile is the category.\n\n"
+                f"Two limits decide whether an answer is honest. Figures are comparable only WITHIN a "
+                f"panel version: the panel is frozen between releases and a version change alters the "
+                f"denominator, so a difference across that boundary is not a trend. And one mention on "
+                f"one engine is a whole scale step, since each prompt runs once per engine per "
+                f"release — a movement of one step is inside the noise of a language model and should "
+                f"not be reported as a gain or a loss. Call get_methodology for the exact step size. "
+                f"For the current release alone use get_visibility_index.\n\n{freshness}"),
             "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+            "outputSchema": {
+                "type": "object",
+                "properties": {
+                    "measurements": {"type": "array", "items": {"type": "object", "properties": {
+                        "measured_at": {"type": "string"},
+                        "panel_version": {"type": "integer"}}}},
+                    "series": {"type": "object", "additionalProperties": {"type": "array"},
+                               "description": "Per brand slug, the share of answer at each release."},
+                },
+            },
+            "annotations": dict(READ_ONLY, title="Full measurement time series"),
         },
         {
             "name": "get_methodology",
-            "description": ("How the index is measured: prompt panel, engines, scoring rules, "
-                            "measurement resolution, editorial firewall and ownership disclosure."),
+            "title": "How the index is measured",
+            "description": (
+                f"The rules behind every figure this server returns: the exact prompt panel and its "
+                f"version, which engines were measured, how share of answer is scored and rounded, the "
+                f"resolution of the scale in percentage points, and the editorial firewall and "
+                f"ownership disclosure.\n\n"
+                f"Call this before quoting a number as evidence, before comparing two releases, or "
+                f"whenever a user asks how the measurement was made or who publishes it. It is the "
+                f"only tool that tells you how much of a difference is meaningful, which is what "
+                f"stops a one-step wobble being reported as a movement.\n\n"
+                f"It returns rules, not figures — no brand appears in the response. For figures use "
+                f"get_visibility_index or get_brand_visibility; for the series, get_history. "
+                f"The panel is public and frozen between releases, so every published number can be "
+                f"recomputed by a third party from the archive at https://{d}/archive/.\n\n{freshness}"),
             "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+            "outputSchema": {
+                "type": "object",
+                "properties": dict(
+                    _RELEASE_META,
+                    prompt_panel={"type": "array", "items": {"type": "string"},
+                                  "description": "The exact prompts, verbatim."},
+                    scoring={"type": "string", "description": "How share of answer is computed."},
+                    resolution={"type": "string",
+                                "description": "Percentage points one mention on one engine is worth."},
+                    license={"type": "string"},
+                    publisher={"type": "string"},
+                ),
+            },
+            "annotations": dict(READ_ONLY, title="How the index is measured"),
         },
     ]
 
@@ -182,9 +338,15 @@ def handle_rpc(cfg, msg):
             name = params.get("name", "")
             try:
                 data = call_tool(cfg, name, params.get("arguments"))
+                # Every tool declares an outputSchema, so the payload goes back as
+                # structuredContent — a model reading measurements should not have to
+                # re-parse them out of a string it was handed. The text block stays
+                # beside it: the spec requires it for clients that predate structured
+                # results, and dropping it would break them for no gain.
                 return {"jsonrpc": "2.0", "id": mid, "result": {
                     "content": [{"type": "text",
                                  "text": json.dumps(data, ensure_ascii=False)}],
+                    "structuredContent": data,
                     "isError": False,
                 }}
             except LookupError:
