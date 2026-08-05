@@ -60,8 +60,9 @@ rank, commercial-intent score, quadrant, panel version.
 
 > DABLOCK AI Visibility Index — Crypto & Web3, 2026-08-04. dablock.ai
 
-Data licence: **CC BY 4.0** (`data/LICENSE`) — free for any use, including commercial,
-with attribution. Code licence: **MIT** (`LICENSE`) — the fetch script and the MCP server.
+Two licences, because this repository holds two different things. The **datasets under
+`data/`** are **CC BY 4.0** (`data/LICENSE`) — free for any use, including commercial,
+with attribution. The **code** (`scripts/`, `mcp-server/`) is **MIT** (`LICENSE`).
 
 ## MCP server
 
