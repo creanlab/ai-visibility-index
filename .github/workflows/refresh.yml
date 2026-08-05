@@ -1,0 +1,31 @@
+name: refresh mirror
+
+# Вторник 06:10 UTC — через сутки после понедельничного замера (крон на VPS
+# идёт в пн 04:17 UTC): к этому моменту свежий релиз гарантированно выложен.
+# Зеркало обновляет сам GitHub — никаких ключей на нашем сервере.
+on:
+  schedule:
+    - cron: "10 6 * * 2"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch latest datasets from the canonical domains
+        run: python scripts/fetch_latest.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "aiv-mirror-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "mirror: refresh datasets from dabyte.ai and dablock.ai"
+          git push
