@@ -1,0 +1,16 @@
+[Unit]
+Description=AI Visibility Index MCP server (dabyte.ai + dablock.ai, streamable HTTP on 127.0.0.1:8090)
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/media_hub/backend/mcp_server/server.py
+Restart=always
+RestartSec=3
+User=www-data
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/opt/vectory-site /opt/media_hub
+
+[Install]
+WantedBy=multi-user.target
