@@ -36,7 +36,8 @@ SITES = {
     "dablock.ai": {"key": "dablock", "domain": "dablock.ai",
                    "brand": "DABLOCK", "niche": "crypto/Web3"},
 }
-DEFAULT_SITE = "dabyte.ai"   # used when no Host header identifies a site
+# AIV_SITE names the site to serve when the Host header does not. Deliberately
+# has no default: see site_for().
 
 _SLUG = re.compile(r"^[a-z0-9-]{1,80}$")
 
@@ -44,15 +45,18 @@ _SLUG = re.compile(r"^[a-z0-9-]{1,80}$")
 def site_for(host):
     """Pick the site from the Host header.
 
-    Behind the reverse proxy the header names one of the domains. Run
-    standalone (a container, `python server.py`, an inspector on localhost)
-    there is nothing useful in it, so serve AIV_SITE — otherwise the server
-    would answer 404 to everyone who just wants to try it.
+    Behind the reverse proxy the header names one of the domains. Standalone
+    (a container, an inspector on localhost) it names neither, so AIV_SITE says
+    which site to serve. That variable must be set deliberately: without it an
+    unrecognised Host stays an error rather than silently serving whichever
+    site happened to be first, which would answer the wrong question.
     """
     h = (host or "").split(":")[0].lower()
     if h.startswith("www."):
         h = h[4:]
-    return SITES.get(h) or SITES[os.getenv("AIV_SITE", DEFAULT_SITE)]
+    if h in SITES:
+        return SITES[h]
+    return SITES.get(os.getenv("AIV_SITE", ""))
 
 
 def read_json(site_key, rel, domain=None):
@@ -165,6 +169,14 @@ def handle_rpc(cfg, msg):
         if method == "ping":
             return {"jsonrpc": "2.0", "id": mid, "result": {}}
         if method == "tools/list":
+            # The list is five tools in under 2 KB, so it is never paginated. A
+            # client that sends a cursor is working from a wrong assumption and
+            # must hear so — silently returning the whole list would look like
+            # the cursor was honoured.
+            if params.get("cursor") is not None:
+                return {"jsonrpc": "2.0", "id": mid, "error": {
+                    "code": -32602,
+                    "message": "this server does not paginate tools/list; omit the cursor"}}
             return {"jsonrpc": "2.0", "id": mid, "result": {"tools": tools_for(cfg)}}
         if method == "tools/call":
             name = params.get("name", "")
@@ -218,6 +230,11 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):                                # noqa: N802
         cfg = site_for(self.headers.get("Host"))
+        if not cfg:
+            self._send(404, {"error": f"unknown host {self.headers.get('Host')!r}; "
+                                      f"set AIV_SITE to one of {sorted(SITES)} to serve "
+                                      f"a site regardless of Host"})
+            return
         try:
             n = int(self.headers.get("Content-Length") or 0)
             msg = json.loads(self.rfile.read(n))
@@ -237,7 +254,7 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    if os.getenv("AIV_SITE", DEFAULT_SITE) not in SITES:
+    if os.getenv("AIV_SITE") and os.getenv("AIV_SITE") not in SITES:
         raise SystemExit(f"AIV_SITE must be one of {sorted(SITES)}, got {os.getenv('AIV_SITE')!r}")
     # Binds to localhost by default because the canonical instance sits behind a
     # reverse proxy that terminates TLS. A container needs 0.0.0.0 to be reachable.

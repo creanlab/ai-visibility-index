@@ -7,8 +7,10 @@
 #   curl -X POST http://localhost:8090 -H 'Content-Type: application/json' \
 #        -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 #
-# Serve the crypto index instead of the SaaS one with -e AIV_SITE=dablock.ai.
-# Mount a built site tree at /srv/sites to read from disk instead of HTTPS.
+# AIV_SITE is what makes this work off a localhost Host header, and it is set
+# here rather than defaulted in the code: a server that guesses which site it is
+# would answer SaaS questions with crypto data. Swap it for dablock.ai to serve
+# the crypto index. Mount a site tree at /srv/sites to read disk instead of HTTPS.
 FROM python:3.12-slim
 
 WORKDIR /srv/mcp-aiv
