@@ -1,0 +1,134 @@
+{
+  "source": "DABYTE AI Visibility Index, dabyte.ai",
+  "niche": "saas",
+  "measurements": [
+    "2026-07-23",
+    "2026-07-28",
+    "2026-08-01",
+    "2026-08-04"
+  ],
+  "note": "Full published history of share-of-answer per brand. Each measurement is also available verbatim at /archive/<date>.json. Values are the percentage of the fixed prompt panel in which an engine named the brand.",
+  "license": "CC-BY-4.0",
+  "series": {
+    "Airtable": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4
+      }
+    ],
+    "Amplitude": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      }
+    ],
+    "Asana": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      }
+    ],
+    "ClickUp": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4
+      }
+    ],
+    "Copy.ai": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 0.0
+      }
+    ],
+    "Figma": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 14.6
+      }
+    ],
+    "GitHub Copilot": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 14.6
+      }
+    ],
+    "HubSpot": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 22.9
+      }
+    ],
+    "Intercom": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 8.4
+      }
+    ],
+    "Jasper": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 2.0
+      }
+    ],
+    "Linear": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 4.2
+      }
+    ],
+    "Miro": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 8.3
+      }
+    ],
+    "Monday.com": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 8.3
+      }
+    ],
+    "Notion": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 29.2
+      }
+    ],
+    "Otter.ai": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 4.2
+      }
+    ],
+    "Retool": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4
+      }
+    ],
+    "Salesforce": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 22.8
+      }
+    ],
+    "Slack": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 33.3
+      }
+    ],
+    "Webflow": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 0.0
+      }
+    ],
+    "Zapier": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 14.6
+      }
+    ]
+  }
+}

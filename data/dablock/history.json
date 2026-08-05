@@ -1,0 +1,157 @@
+{
+  "source": "DABLOCK AI Visibility Index, dablock.ai",
+  "niche": "crypto",
+  "measurements": [
+    "2026-07-28",
+    "2026-08-01",
+    "2026-08-04"
+  ],
+  "note": "Full published history of share-of-answer per brand. Each measurement is also available verbatim at /archive/<date>.json. Values are the percentage of the fixed prompt panel in which an engine named the brand.",
+  "license": "CC-BY-4.0",
+  "series": {
+    "Aave": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      }
+    ],
+    "Arbitrum": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 18.8
+      }
+    ],
+    "Binance": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 26.9
+      }
+    ],
+    "CertiK": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 2.0
+      }
+    ],
+    "Chainalysis": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      }
+    ],
+    "CoinGecko": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 12.4
+      }
+    ],
+    "CoinMarketCap": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4
+      }
+    ],
+    "CoinTracker": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 12.5
+      }
+    ],
+    "Coinbase": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 41.5
+      }
+    ],
+    "DefiLlama": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 2.1
+      }
+    ],
+    "Dune Analytics": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 0.0
+      }
+    ],
+    "Etherscan": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 0.0
+      }
+    ],
+    "Koinly": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 12.5
+      }
+    ],
+    "Kraken": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 25.0
+      }
+    ],
+    "Ledger": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 22.9
+      }
+    ],
+    "Lido": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      }
+    ],
+    "MetaMask": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 12.3
+      }
+    ],
+    "MoonPay": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 2.0
+      }
+    ],
+    "OpenSea": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      }
+    ],
+    "OpenZeppelin": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      }
+    ],
+    "Phantom": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4
+      }
+    ],
+    "Polygon": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 22.9
+      }
+    ],
+    "Trezor": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 16.6
+      }
+    ],
+    "Uniswap": [
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 14.5
+      }
+    ]
+  }
+}
