@@ -1,16 +1,20 @@
 [Unit]
-Description=AI Visibility Index MCP server (dabyte.ai + dablock.ai, streamable HTTP on 127.0.0.1:8090)
+Description=AI Visibility Index MCP server (streamable HTTP on 127.0.0.1:8090)
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /opt/media_hub/backend/mcp_server/server.py
+# Adjust the two paths below to wherever you installed server.py and the published
+# site data, then point AIV_SITE_ROOT at the directory holding one subdirectory per
+# site (each with its api/*.json).
+Environment=AIV_SITE_ROOT=/srv/sites
+ExecStart=/usr/bin/python3 /srv/mcp-aiv/server.py
 Restart=always
 RestartSec=3
-User=www-data
+User=mcp-aiv
 NoNewPrivileges=true
 ProtectSystem=strict
 ProtectHome=true
-ReadOnlyPaths=/opt/vectory-site /opt/media_hub
+ReadOnlyPaths=/srv/sites /srv/mcp-aiv
 
 [Install]
 WantedBy=multi-user.target

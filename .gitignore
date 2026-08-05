@@ -1,3 +1,3 @@
-# Данные тянутся скриптом, «сырых» артефактов не коммитим
+# Datasets are fetched by scripts/fetch_latest.py; no raw artefacts are committed.
 __pycache__/
 *.pyc

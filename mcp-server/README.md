@@ -50,7 +50,7 @@ Stateless by design: streamable HTTP permits a server with no session id, and
 initialization is not required before `tools/list`.
 
 - `server.py` — the whole server, Python standard library only, no dependencies
-- `mcp-aiv.service` — systemd unit (runs as `www-data`, read-only filesystem)
+- `mcp-aiv.service` — systemd unit (unprivileged user, read-only filesystem)
 
 Reverse proxy: point `/mcp` at `127.0.0.1:8090`, pass the `Host` header through.
 

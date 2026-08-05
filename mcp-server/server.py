@@ -1,31 +1,30 @@
 # -*- coding: utf-8 -*-
-"""server.py — настоящий MCP-сервер сети (streamable HTTP, JSON-RPC 2.0).
+"""MCP server for the AI Visibility Index (streamable HTTP, JSON-RPC 2.0).
 
-ЗАЧЕМ. /.well-known/mcp.json был только ДЕСКРИПТОРОМ: перечислял tools как
-статические GET-эндпоинты. Official MCP Registry валидирует сабмит живым
-JSON-RPC initialize-хендшейком — дескриптор его не проходит, и значит ни
-реестр, ни каталоги (PulseMCP, Glama), ни честный PR в awesome-mcp-servers нам
-недоступны. Этот процесс закрывает разрыв: протокольный сервер поверх ТЕХ ЖЕ
-опубликованных JSON-файлов сайта.
+Serves the weekly share-of-answer measurements published at dabyte.ai and
+dablock.ai to any MCP client.
 
-АРХИТЕКТУРА. Один процесс на 127.0.0.1:8090 обслуживает оба домена — сайт
-выбирается по заголовку Host (nginx проксирует /mcp обоих vhost-ов сюда).
-Данные читаются с диска из живого каталога сайта при каждом вызове: сервер
-никогда не расходится с тем, что видит обычный читатель, и не требует
-пересборки при новом замере. Стейта нет: streamable HTTP разрешает stateless-
-сервер без session id, инициализация не обязательна перед tools/list.
+Design. One process serves both sites; the site is chosen by the Host header,
+so a single deployment covers every domain behind the reverse proxy. Tools read
+the JSON the sites already publish, from disk at call time — the server cannot
+drift from what a human reader sees, and a new weekly measurement needs no
+redeploy. Stateless: streamable HTTP permits a server with no session id, and
+initialization is not required before tools/list.
 
-Запуск (systemd-юнит mcp-aiv.service):
-  /usr/bin/python3 /opt/media_hub/backend/mcp_server/server.py
-Зависимости: стандартная библиотека. Никаких fastapi/uvicorn — меньше
-поверхностей отказа, http.server для строго одного POST-эндпоинта достаточно.
+No dependencies beyond the standard library. For a single POST endpoint,
+http.server is enough and there is less that can break.
+
+Configuration. SITE_ROOT points at the directory holding one subdirectory per
+site, each with the published api/*.json files. Override with the AIV_SITE_ROOT
+environment variable.
 """
 import json
+import os
 import pathlib
 import re
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-SITE_ROOT = pathlib.Path("/opt/vectory-site")
+SITE_ROOT = pathlib.Path(os.getenv("AIV_SITE_ROOT", "/srv/sites"))
 PROTOCOL_VERSIONS = {"2024-11-05", "2025-03-26", "2025-06-18"}
 LATEST = "2025-06-18"
 
@@ -114,7 +113,7 @@ def call_tool(cfg, name, args):
 
 
 def handle_rpc(cfg, msg):
-    """Один JSON-RPC запрос -> ответ (None для нотификаций)."""
+    """Handle one JSON-RPC message; returns None for notifications."""
     if not isinstance(msg, dict) or msg.get("jsonrpc") != "2.0":
         return {"jsonrpc": "2.0", "id": None,
                 "error": {"code": -32600, "message": "invalid JSON-RPC 2.0 message"}}
@@ -123,7 +122,7 @@ def handle_rpc(cfg, msg):
     if method and method.startswith("notifications/"):
         return None
     if mid is None:
-        return None                                  # прочие нотификации молча принимаем
+        return None                                  # accept other notifications silently
 
     try:
         if method == "initialize":
@@ -155,13 +154,13 @@ def handle_rpc(cfg, msg):
                 return {"jsonrpc": "2.0", "id": mid,
                         "error": {"code": -32602, "message": f"unknown tool: {name}"}}
             except ValueError as e:
-                # Ошибка ИНСТРУМЕНТА (не протокола) — по спеке отдаётся как result
-                # с isError, чтобы LLM могла её прочитать и поправить вызов.
+                # A tool error, not a protocol error: the spec returns it as a
+                # result with isError so the model can read it and retry.
                 return {"jsonrpc": "2.0", "id": mid, "result": {
                     "content": [{"type": "text", "text": str(e)}], "isError": True}}
         return {"jsonrpc": "2.0", "id": mid,
                 "error": {"code": -32601, "message": f"method not found: {method}"}}
-    except Exception as e:                            # noqa: BLE001 — наружу только JSON-RPC
+    except Exception as e:                            # noqa: BLE001 — JSON-RPC errors only
         return {"jsonrpc": "2.0", "id": mid,
                 "error": {"code": -32603, "message": f"internal error: {type(e).__name__}"}}
 
@@ -189,7 +188,7 @@ class Handler(BaseHTTPRequestHandler):
         self._send(204)
 
     def do_GET(self):                                 # noqa: N802
-        # Streamable HTTP разрешает 405 на GET: SSE-стрим не поддерживаем, и это честно.
+        # Streamable HTTP allows 405 on GET; we do not implement the SSE stream.
         self._send(405, {"error": "SSE not supported; POST JSON-RPC messages to this endpoint"})
 
     def do_POST(self):                                # noqa: N802
@@ -204,14 +203,14 @@ class Handler(BaseHTTPRequestHandler):
             self._send(400, {"jsonrpc": "2.0", "id": None,
                              "error": {"code": -32700, "message": "parse error"}})
             return
-        if isinstance(msg, list):                     # батч: отвечаем на все запросы разом
+        if isinstance(msg, list):                     # batch: answer every request at once
             replies = [r for r in (handle_rpc(cfg, m) for m in msg) if r is not None]
             self._send(200, replies) if replies else self._send(202)
             return
         reply = handle_rpc(cfg, msg)
         self._send(200, reply) if reply is not None else self._send(202)
 
-    def log_message(self, fmt, *args):                # журнал — в systemd
+    def log_message(self, fmt, *args):                # logs go to the service journal
         print(f"{self.headers.get('Host', '?')} {fmt % args}")
 
 

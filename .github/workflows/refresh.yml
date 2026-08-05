@@ -1,8 +1,8 @@
 name: refresh mirror
 
-# Вторник 06:10 UTC — через сутки после понедельничного замера (крон на VPS
-# идёт в пн 04:17 UTC): к этому моменту свежий релиз гарантированно выложен.
-# Зеркало обновляет сам GitHub — никаких ключей на нашем сервере.
+# Runs a day after the weekly measurement is published, so the fresh release is
+# always in place by the time the mirror looks for it. GitHub does the refresh
+# itself: no credentials are needed anywhere outside this repository.
 on:
   schedule:
     - cron: "10 6 * * 2"
