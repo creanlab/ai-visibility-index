@@ -60,7 +60,26 @@ rank, commercial-intent score, quadrant, panel version.
 
 > DABLOCK AI Visibility Index — Crypto & Web3, 2026-08-04. dablock.ai
 
-License: **CC BY 4.0** — free for any use, including commercial, with attribution.
+Data licence: **CC BY 4.0** (`data/LICENSE`) — free for any use, including commercial,
+with attribution. Code licence: **MIT** (`LICENSE`) — the fetch script and the MCP server.
+
+## MCP server
+
+The index is also an [MCP](https://modelcontextprotocol.io) server, so an assistant can
+query it directly. Hosted endpoints need no installation:
+
+```
+https://dabyte.ai/mcp     SaaS & AI tools
+https://dablock.ai/mcp    Crypto & Web3
+```
+
+To run your own — no dataset required, it reads the published JSON over HTTPS:
+
+```bash
+docker build -t aiv-mcp . && docker run -p 8090:8090 aiv-mcp
+```
+
+Tool reference and client setup: [`mcp-server/README.md`](mcp-server/README.md).
 
 ## Disambiguation
 

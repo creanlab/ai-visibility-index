@@ -22,6 +22,8 @@ import json
 import os
 import pathlib
 import re
+import urllib.error
+import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 SITE_ROOT = pathlib.Path(os.getenv("AIV_SITE_ROOT", "/srv/sites"))
@@ -29,23 +31,46 @@ PROTOCOL_VERSIONS = {"2024-11-05", "2025-03-26", "2025-06-18"}
 LATEST = "2025-06-18"
 
 SITES = {
-    "dabyte.ai": {"key": "dabyte", "brand": "DABYTE", "niche": "SaaS & AI tools"},
-    "dablock.ai": {"key": "dablock", "brand": "DABLOCK", "niche": "crypto/Web3"},
+    "dabyte.ai": {"key": "dabyte", "domain": "dabyte.ai",
+                  "brand": "DABYTE", "niche": "SaaS & AI tools"},
+    "dablock.ai": {"key": "dablock", "domain": "dablock.ai",
+                   "brand": "DABLOCK", "niche": "crypto/Web3"},
 }
+DEFAULT_SITE = "dabyte.ai"   # used when no Host header identifies a site
 
 _SLUG = re.compile(r"^[a-z0-9-]{1,80}$")
 
 
 def site_for(host):
+    """Pick the site from the Host header.
+
+    Behind the reverse proxy the header names one of the domains. Run
+    standalone (a container, `python server.py`, an inspector on localhost)
+    there is nothing useful in it, so serve AIV_SITE — otherwise the server
+    would answer 404 to everyone who just wants to try it.
+    """
     h = (host or "").split(":")[0].lower()
     if h.startswith("www."):
         h = h[4:]
-    return SITES.get(h)
+    return SITES.get(h) or SITES[os.getenv("AIV_SITE", DEFAULT_SITE)]
 
 
-def read_json(site_key, rel):
+def read_json(site_key, rel, domain=None):
+    """Read one published JSON file.
+
+    Prefers a local copy of the site tree, which is how the canonical instance
+    runs: it serves exactly the bytes a human reader is served, with no
+    redeploy between measurements. Anywhere else the directory is absent, so
+    fall back to the same file over HTTPS from the site itself — that keeps
+    this server runnable by anyone, not only on the machine that builds it.
+    """
     p = SITE_ROOT / site_key / rel
-    return json.loads(p.read_text(encoding="utf-8"))
+    if p.is_file():
+        return json.loads(p.read_text(encoding="utf-8"))
+    if domain is None:
+        raise FileNotFoundError(str(p))
+    with urllib.request.urlopen(f"https://{domain}/{rel}", timeout=20) as r:
+        return json.loads(r.read().decode("utf-8"))
 
 
 def tools_for(cfg):
@@ -91,23 +116,23 @@ def tools_for(cfg):
 
 
 def call_tool(cfg, name, args):
-    k = cfg["key"]
+    k, d = cfg["key"], cfg.get("domain")
     if name == "get_visibility_index":
-        return read_json(k, "api/aiv.json")
+        return read_json(k, "api/aiv.json", d)
     if name == "list_tracked_brands":
-        return read_json(k, "api/brands.json")
+        return read_json(k, "api/brands.json", d)
     if name == "get_history":
-        return read_json(k, "api/history.json")
+        return read_json(k, "api/history.json", d)
     if name == "get_methodology":
-        return read_json(k, "api/methodology.json")
+        return read_json(k, "api/methodology.json", d)
     if name == "get_brand_visibility":
         slug = str((args or {}).get("slug", "")).strip().lower()
         if not _SLUG.match(slug):
             raise ValueError(f"invalid slug {slug!r}: expected [a-z0-9-]")
         try:
-            return read_json(k, f"api/brands/{slug}.json")
-        except FileNotFoundError:
-            known = [e.get("slug") for e in read_json(k, "api/brands.json").get("brands", [])]
+            return read_json(k, f"api/brands/{slug}.json", d)
+        except (FileNotFoundError, urllib.error.HTTPError):
+            known = [e.get("slug") for e in read_json(k, "api/brands.json", d).get("brands", [])]
             raise ValueError(f"unknown brand slug {slug!r}; valid slugs: {known}")
     raise LookupError(name)
 
@@ -193,9 +218,6 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):                                # noqa: N802
         cfg = site_for(self.headers.get("Host"))
-        if not cfg:
-            self._send(404, {"error": "unknown host"})
-            return
         try:
             n = int(self.headers.get("Content-Length") or 0)
             msg = json.loads(self.rfile.read(n))
@@ -215,4 +237,11 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    ThreadingHTTPServer(("127.0.0.1", 8090), Handler).serve_forever()
+    if os.getenv("AIV_SITE", DEFAULT_SITE) not in SITES:
+        raise SystemExit(f"AIV_SITE must be one of {sorted(SITES)}, got {os.getenv('AIV_SITE')!r}")
+    # Binds to localhost by default because the canonical instance sits behind a
+    # reverse proxy that terminates TLS. A container needs 0.0.0.0 to be reachable.
+    host = os.getenv("AIV_BIND", "127.0.0.1")
+    port = int(os.getenv("AIV_PORT", "8090"))
+    print(f"aiv-mcp listening on {host}:{port}, site root {SITE_ROOT}")
+    ThreadingHTTPServer((host, port), Handler).serve_forever()
