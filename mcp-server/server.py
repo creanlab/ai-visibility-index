@@ -297,6 +297,30 @@ def call_tool(cfg, name, args):
     raise LookupError(name)
 
 
+def log_use(host, ua, msg):
+    """One structured line per JSON-RPC call, so demand can actually be counted.
+
+    Without this, an access log shows only "POST /mcp" and every caller looks
+    alike — a catalogue crawler running tools/list, an uptime monitor that never
+    invokes anything, your own dashboard, and an agent actually using a tool all
+    collapse into one number. Uptime monitors in particular are a large share of
+    traffic to any published MCP endpoint, so a raw POST count badly overstates
+    real use.
+
+    Grep the service journal for MCPUSE to count. Nothing sensitive is written:
+    method name, tool name, User-Agent — no arguments, no addresses.
+    """
+    for m in (msg if isinstance(msg, list) else [msg]):
+        if not isinstance(m, dict):
+            continue
+        method = str(m.get("method") or "?")
+        tool = str((m.get("params") or {}).get("name") or "?") if method == "tools/call" else "-"
+        # flush: systemd captures stdout through a pipe, so Python block-buffers
+        # it and a low-traffic day would sit in the buffer for hours.
+        print(f"MCPUSE host={host} method={method} tool={tool} ua={str(ua or '-')[:120]!r}",
+              flush=True)
+
+
 def handle_rpc(cfg, msg):
     """Handle one JSON-RPC message; returns None for notifications."""
     if not isinstance(msg, dict) or msg.get("jsonrpc") != "2.0":
@@ -404,6 +428,7 @@ class Handler(BaseHTTPRequestHandler):
             self._send(400, {"jsonrpc": "2.0", "id": None,
                              "error": {"code": -32700, "message": "parse error"}})
             return
+        log_use(self.headers.get("Host", "?"), self.headers.get("User-Agent"), msg)
         if isinstance(msg, list):                     # batch: answer every request at once
             replies = [r for r in (handle_rpc(cfg, m) for m in msg) if r is not None]
             self._send(200, replies) if replies else self._send(202)
