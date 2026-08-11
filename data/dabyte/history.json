@@ -5,20 +5,36 @@
     "2026-07-23",
     "2026-07-28",
     "2026-08-01",
-    "2026-08-04"
+    "2026-08-04",
+    "2026-08-10"
   ],
-  "note": "Full published history of share-of-answer per brand. Each measurement is also available verbatim at /archive/<date>.json. Values are the percentage of the fixed prompt panel in which an engine named the brand.",
+  "panel_versions": {
+    "2026-07-23": 1,
+    "2026-07-28": 1,
+    "2026-08-01": 1,
+    "2026-08-04": 2,
+    "2026-08-10": 2
+  },
+  "note": "Full published history of share-of-answer per brand. Each measurement is also available verbatim at /archive/<date>.json. Values are the percentage of the fixed prompt panel in which an engine named the brand. `series` is the comparable run of the current panel version only; `series_full` carries every published point with its panel_version — do not chart across version breaks.",
   "license": "CC-BY-4.0",
   "series": {
     "Airtable": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 10.4
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3
       }
     ],
     "Amplitude": [
       {
         "measured_at": "2026-08-04",
+        "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-08-10",
         "visibility_score": 6.2
       }
     ],
@@ -26,35 +42,59 @@
       {
         "measured_at": "2026-08-04",
         "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 10.4
       }
     ],
     "ClickUp": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 10.4
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3
       }
     ],
     "Copy.ai": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 0.0
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.0
       }
     ],
     "Figma": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 14.6
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 12.5
       }
     ],
     "GitHub Copilot": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 14.6
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 16.6
       }
     ],
     "HubSpot": [
       {
         "measured_at": "2026-08-04",
+        "visibility_score": 22.9
+      },
+      {
+        "measured_at": "2026-08-10",
         "visibility_score": 22.9
       }
     ],
@@ -62,29 +102,49 @@
       {
         "measured_at": "2026-08-04",
         "visibility_score": 8.4
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3
       }
     ],
     "Jasper": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 2.0
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 6.2
       }
     ],
     "Linear": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 4.2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.1
       }
     ],
     "Miro": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 8.3
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 10.4
       }
     ],
     "Monday.com": [
       {
         "measured_at": "2026-08-04",
+        "visibility_score": 8.3
+      },
+      {
+        "measured_at": "2026-08-10",
         "visibility_score": 8.3
       }
     ],
@@ -92,42 +152,612 @@
       {
         "measured_at": "2026-08-04",
         "visibility_score": 29.2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 16.5
       }
     ],
     "Otter.ai": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 4.2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.1
       }
     ],
     "Retool": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 10.4
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3
       }
     ],
     "Salesforce": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 22.8
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 31.3
       }
     ],
     "Slack": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 33.3
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 25.2
       }
     ],
     "Webflow": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 0.0
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.1
       }
     ],
     "Zapier": [
       {
         "measured_at": "2026-08-04",
         "visibility_score": 14.6
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 16.8
+      }
+    ]
+  },
+  "series_full": {
+    "Airtable": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3,
+        "panel_version": 2
+      }
+    ],
+    "Amplitude": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 6.2,
+        "panel_version": 2
+      }
+    ],
+    "Asana": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 6.2,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 10.4,
+        "panel_version": 2
+      }
+    ],
+    "ClickUp": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 16.6,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3,
+        "panel_version": 2
+      }
+    ],
+    "Copy.ai": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 0.0,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 0.0,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 0.0,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 0.0,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.0,
+        "panel_version": 2
+      }
+    ],
+    "Figma": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 16.7,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 16.7,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 14.6,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 12.5,
+        "panel_version": 2
+      }
+    ],
+    "GitHub Copilot": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 16.7,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 16.7,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 14.6,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 16.6,
+        "panel_version": 2
+      }
+    ],
+    "HubSpot": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 20.9,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 25.0,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 29.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 22.9,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 22.9,
+        "panel_version": 2
+      }
+    ],
+    "Intercom": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 8.4,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3,
+        "panel_version": 2
+      }
+    ],
+    "Jasper": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 2.0,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 6.2,
+        "panel_version": 2
+      }
+    ],
+    "Linear": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 4.2,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.1,
+        "panel_version": 2
+      }
+    ],
+    "Miro": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 8.3,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 10.4,
+        "panel_version": 2
+      }
+    ],
+    "Monday.com": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 8.3,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3,
+        "panel_version": 2
+      }
+    ],
+    "Notion": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 33.4,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 20.9,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 41.7,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 29.2,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 16.5,
+        "panel_version": 2
+      }
+    ],
+    "Otter.ai": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 8.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 4.2,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.1,
+        "panel_version": 2
+      }
+    ],
+    "Retool": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 10.4,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 8.3,
+        "panel_version": 2
+      }
+    ],
+    "Salesforce": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 20.9,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 20.9,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 29.1,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 22.8,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 31.3,
+        "panel_version": 2
+      }
+    ],
+    "Slack": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 20.8,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 25.0,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 33.3,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 33.3,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 25.2,
+        "panel_version": 2
+      }
+    ],
+    "Webflow": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 0.0,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 4.2,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 0.0,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 2.1,
+        "panel_version": 2
+      }
+    ],
+    "Zapier": [
+      {
+        "measured_at": "2026-07-23",
+        "visibility_score": 12.5,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-07-28",
+        "visibility_score": 20.8,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-01",
+        "visibility_score": 33.4,
+        "panel_version": 1
+      },
+      {
+        "measured_at": "2026-08-04",
+        "visibility_score": 14.6,
+        "panel_version": 2
+      },
+      {
+        "measured_at": "2026-08-10",
+        "visibility_score": 16.8,
+        "panel_version": 2
       }
     ]
   }
