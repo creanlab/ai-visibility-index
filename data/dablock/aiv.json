@@ -2,7 +2,7 @@
   "dataset_name": "AI Visibility Index — Crypto & Web3",
   "niche": "crypto",
   "niche_title": "Crypto & Web3",
-  "measured_at": "2026-08-31",
+  "measured_at": "2026-09-28",
   "method": "sonar",
   "engines": [
     "openai",
@@ -33,177 +33,161 @@
     {
       "brand": "Coinbase",
       "domain": "coinbase.com",
-      "visibility_score": 58.2,
+      "visibility_score": 50.0,
       "per_engine": {
         "openai": 43.8,
-        "perplexity": 68.8,
-        "gemini": 62.5
+        "perplexity": 37.5,
+        "gemini": 68.8
       },
       "commercial_intent": 88,
       "quadrant": "Leaders",
       "is_client": false,
       "rank": 1,
-      "delta": 8.2,
-      "rank_delta": 0
-    },
-    {
-      "brand": "Binance",
-      "domain": "binance.com",
-      "visibility_score": 39.6,
-      "per_engine": {
-        "openai": 37.5,
-        "perplexity": 43.8,
-        "gemini": 37.5
-      },
-      "commercial_intent": 86,
-      "quadrant": "Visibility gap",
-      "is_client": false,
-      "rank": 2,
-      "delta": 0.0,
+      "delta": -2.1,
       "rank_delta": 0
     },
     {
       "brand": "Kraken",
       "domain": "kraken.com",
-      "visibility_score": 37.4,
+      "visibility_score": 39.6,
       "per_engine": {
-        "openai": 31.2,
-        "perplexity": 43.8,
-        "gemini": 37.5
+        "openai": 43.8,
+        "perplexity": 31.2,
+        "gemini": 43.8
       },
       "commercial_intent": 84,
       "quadrant": "Visibility gap",
       "is_client": false,
-      "rank": 3,
-      "delta": -2.2,
-      "rank_delta": 0
-    },
-    {
-      "brand": "Ledger",
-      "domain": "ledger.com",
-      "visibility_score": 37.4,
-      "per_engine": {
-        "openai": 31.2,
-        "perplexity": 31.2,
-        "gemini": 50.0
-      },
-      "commercial_intent": 82,
-      "quadrant": "Visibility gap",
-      "is_client": false,
-      "rank": 4,
-      "delta": 12.4,
+      "rank": 2,
+      "delta": 0.0,
       "rank_delta": 1
     },
     {
-      "brand": "Trezor",
-      "domain": "trezor.io",
-      "visibility_score": 27.1,
+      "brand": "Binance",
+      "domain": "binance.com",
+      "visibility_score": 33.2,
       "per_engine": {
         "openai": 25.0,
-        "perplexity": 18.8,
-        "gemini": 37.5
+        "perplexity": 31.2,
+        "gemini": 43.8
       },
-      "commercial_intent": 78,
+      "commercial_intent": 86,
       "quadrant": "Visibility gap",
       "is_client": false,
-      "rank": 5,
-      "delta": 14.6,
-      "rank_delta": 5
-    },
-    {
-      "brand": "MetaMask",
-      "domain": "metamask.io",
-      "visibility_score": 25.0,
-      "per_engine": {
-        "openai": 25.0,
-        "perplexity": 25.0,
-        "gemini": 25.0
-      },
-      "commercial_intent": 62,
-      "quadrant": "Low performance",
-      "is_client": false,
-      "rank": 6,
-      "delta": 0.0,
-      "rank_delta": -2
-    },
-    {
-      "brand": "Arbitrum",
-      "domain": "arbitrum.io",
-      "visibility_score": 25.0,
-      "per_engine": {
-        "openai": 18.8,
-        "perplexity": 18.8,
-        "gemini": 37.5
-      },
-      "commercial_intent": 48,
-      "quadrant": "Low performance",
-      "is_client": false,
-      "rank": 7,
-      "delta": 4.2,
+      "rank": 3,
+      "delta": -12.6,
       "rank_delta": -1
     },
     {
       "brand": "Polygon",
       "domain": "polygon.technology",
-      "visibility_score": 24.9,
+      "visibility_score": 29.2,
       "per_engine": {
-        "openai": 18.8,
-        "perplexity": 25.0,
-        "gemini": 31.2
+        "openai": 31.2,
+        "perplexity": 18.8,
+        "gemini": 37.5
       },
       "commercial_intent": 50,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 8,
-      "delta": 4.1,
-      "rank_delta": -1
+      "rank": 4,
+      "delta": 4.2,
+      "rank_delta": 2
     },
     {
-      "brand": "CoinGecko",
-      "domain": "coingecko.com",
-      "visibility_score": 16.7,
+      "brand": "Ledger",
+      "domain": "ledger.com",
+      "visibility_score": 27.0,
       "per_engine": {
         "openai": 18.8,
-        "perplexity": 12.5,
-        "gemini": 18.8
+        "perplexity": 25.0,
+        "gemini": 37.5
       },
-      "commercial_intent": 52,
+      "commercial_intent": 82,
+      "quadrant": "Visibility gap",
+      "is_client": false,
+      "rank": 5,
+      "delta": 0.0,
+      "rank_delta": 0
+    },
+    {
+      "brand": "Arbitrum",
+      "domain": "arbitrum.io",
+      "visibility_score": 27.0,
+      "per_engine": {
+        "openai": 25.0,
+        "perplexity": 25.0,
+        "gemini": 31.2
+      },
+      "commercial_intent": 48,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 9,
-      "delta": 0.0,
-      "rank_delta": -1
+      "rank": 6,
+      "delta": 4.1,
+      "rank_delta": 1
+    },
+    {
+      "brand": "MetaMask",
+      "domain": "metamask.io",
+      "visibility_score": 22.9,
+      "per_engine": {
+        "openai": 25.0,
+        "perplexity": 12.5,
+        "gemini": 31.2
+      },
+      "commercial_intent": 62,
+      "quadrant": "Low performance",
+      "is_client": false,
+      "rank": 7,
+      "delta": -10.3,
+      "rank_delta": -3
     },
     {
       "brand": "Uniswap",
       "domain": "uniswap.org",
-      "visibility_score": 14.5,
+      "visibility_score": 22.9,
       "per_engine": {
-        "openai": 6.2,
-        "perplexity": 12.5,
-        "gemini": 25.0
+        "openai": 18.8,
+        "perplexity": 6.2,
+        "gemini": 43.8
       },
       "commercial_intent": 60,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 10,
-      "delta": 1.9,
-      "rank_delta": -1
+      "rank": 8,
+      "delta": 2.1,
+      "rank_delta": 0
     },
     {
-      "brand": "Phantom",
-      "domain": "phantom.com",
-      "visibility_score": 12.5,
+      "brand": "Trezor",
+      "domain": "trezor.io",
+      "visibility_score": 18.7,
       "per_engine": {
         "openai": 12.5,
-        "perplexity": 6.2,
-        "gemini": 18.8
+        "perplexity": 12.5,
+        "gemini": 31.2
       },
-      "commercial_intent": 58,
+      "commercial_intent": 78,
+      "quadrant": "Visibility gap",
+      "is_client": false,
+      "rank": 9,
+      "delta": 0.0,
+      "rank_delta": 0
+    },
+    {
+      "brand": "CoinGecko",
+      "domain": "coingecko.com",
+      "visibility_score": 16.8,
+      "per_engine": {
+        "openai": 25.0,
+        "perplexity": 12.5,
+        "gemini": 12.5
+      },
+      "commercial_intent": 52,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 11,
-      "delta": 0.0,
+      "rank": 10,
+      "delta": 0.2,
       "rank_delta": 0
     },
     {
@@ -218,9 +202,9 @@
       "commercial_intent": 52,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 12,
-      "delta": 0.0,
-      "rank_delta": 0
+      "rank": 11,
+      "delta": 2.1,
+      "rank_delta": 4
     },
     {
       "brand": "Koinly",
@@ -234,9 +218,41 @@
       "commercial_intent": 86,
       "quadrant": "Visibility gap",
       "is_client": false,
-      "rank": 13,
+      "rank": 12,
       "delta": 0.0,
-      "rank_delta": 0
+      "rank_delta": 1
+    },
+    {
+      "brand": "CoinTracker",
+      "domain": "cointracker.io",
+      "visibility_score": 12.5,
+      "per_engine": {
+        "openai": 12.5,
+        "perplexity": 12.5,
+        "gemini": 12.5
+      },
+      "commercial_intent": 84,
+      "quadrant": "Visibility gap",
+      "is_client": false,
+      "rank": 13,
+      "delta": 2.1,
+      "rank_delta": 3
+    },
+    {
+      "brand": "Phantom",
+      "domain": "phantom.com",
+      "visibility_score": 10.4,
+      "per_engine": {
+        "openai": 12.5,
+        "perplexity": 6.2,
+        "gemini": 12.5
+      },
+      "commercial_intent": 58,
+      "quadrant": "Low performance",
+      "is_client": false,
+      "rank": 14,
+      "delta": -6.1,
+      "rank_delta": -3
     },
     {
       "brand": "Aave",
@@ -250,25 +266,25 @@
       "commercial_intent": 58,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 14,
+      "rank": 15,
       "delta": 2.1,
       "rank_delta": 2
     },
     {
       "brand": "Lido",
       "domain": "lido.fi",
-      "visibility_score": 8.3,
+      "visibility_score": 10.4,
       "per_engine": {
         "openai": 6.2,
         "perplexity": 6.2,
-        "gemini": 12.5
+        "gemini": 18.8
       },
       "commercial_intent": 55,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 15,
-      "delta": -2.1,
-      "rank_delta": -1
+      "rank": 16,
+      "delta": -4.1,
+      "rank_delta": -4
     },
     {
       "brand": "DefiLlama",
@@ -282,25 +298,9 @@
       "commercial_intent": 40,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 16,
-      "delta": 4.1,
-      "rank_delta": 4
-    },
-    {
-      "brand": "CoinTracker",
-      "domain": "cointracker.io",
-      "visibility_score": 8.3,
-      "per_engine": {
-        "openai": 12.5,
-        "perplexity": 6.2,
-        "gemini": 6.2
-      },
-      "commercial_intent": 84,
-      "quadrant": "Visibility gap",
-      "is_client": false,
       "rank": 17,
-      "delta": -2.1,
-      "rank_delta": -2
+      "delta": 2.1,
+      "rank_delta": 1
     },
     {
       "brand": "OpenSea",
@@ -315,8 +315,8 @@
       "quadrant": "Low performance",
       "is_client": false,
       "rank": 18,
-      "delta": 0.0,
-      "rank_delta": -1
+      "delta": -4.2,
+      "rank_delta": -4
     },
     {
       "brand": "Chainalysis",
@@ -332,7 +332,7 @@
       "is_client": false,
       "rank": 19,
       "delta": 0.0,
-      "rank_delta": -1
+      "rank_delta": 0
     },
     {
       "brand": "OpenZeppelin",
@@ -348,72 +348,72 @@
       "is_client": false,
       "rank": 20,
       "delta": 0.0,
-      "rank_delta": -1
+      "rank_delta": 1
     },
     {
       "brand": "CertiK",
       "domain": "certik.com",
-      "visibility_score": 4.2,
+      "visibility_score": 2.1,
       "per_engine": {
         "openai": 6.2,
         "perplexity": 0.0,
-        "gemini": 6.2
+        "gemini": 0.0
       },
       "commercial_intent": 80,
       "quadrant": "Visibility gap",
       "is_client": false,
       "rank": 21,
-      "delta": 2.1,
-      "rank_delta": 2
+      "delta": -4.1,
+      "rank_delta": -1
     },
     {
-      "brand": "MoonPay",
-      "domain": "moonpay.com",
-      "visibility_score": 4.1,
-      "per_engine": {
-        "openai": 0.0,
-        "perplexity": 6.2,
-        "gemini": 6.2
-      },
-      "commercial_intent": 74,
-      "quadrant": "Visibility gap",
-      "is_client": false,
-      "rank": 22,
-      "delta": 0.0,
-      "rank_delta": 0
-    },
-    {
-      "brand": "Etherscan",
-      "domain": "etherscan.io",
+      "brand": "Dune Analytics",
+      "domain": "dune.com",
       "visibility_score": 2.0,
       "per_engine": {
         "openai": 0.0,
         "perplexity": 6.2,
         "gemini": 0.0
       },
-      "commercial_intent": 38,
+      "commercial_intent": 62,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 23,
-      "delta": -2.2,
-      "rank_delta": -2
+      "rank": 22,
+      "delta": 2.0,
+      "rank_delta": 2
     },
     {
-      "brand": "Dune Analytics",
-      "domain": "dune.com",
+      "brand": "MoonPay",
+      "domain": "moonpay.com",
+      "visibility_score": 2.0,
+      "per_engine": {
+        "openai": 0.0,
+        "perplexity": 0.0,
+        "gemini": 6.2
+      },
+      "commercial_intent": 74,
+      "quadrant": "Visibility gap",
+      "is_client": false,
+      "rank": 23,
+      "delta": -2.1,
+      "rank_delta": 0
+    },
+    {
+      "brand": "Etherscan",
+      "domain": "etherscan.io",
       "visibility_score": 0.0,
       "per_engine": {
         "openai": 0.0,
         "perplexity": 0.0,
         "gemini": 0.0
       },
-      "commercial_intent": 62,
+      "commercial_intent": 38,
       "quadrant": "Low performance",
       "is_client": false,
       "rank": 24,
-      "delta": 0.0,
-      "rank_delta": 0
+      "delta": -4.2,
+      "rank_delta": -2
     }
   ],
-  "previous_measured_at": "2026-08-26"
+  "previous_measured_at": "2026-09-24"
 }

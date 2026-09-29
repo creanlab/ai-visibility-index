@@ -1,21 +1,21 @@
 rank,brand,domain,visibility_score,visibility_openai,visibility_perplexity,visibility_gemini,commercial_intent,quadrant,measured_at,method
-1,Slack,slack.com,52.0,50.0,50.0,56.2,70,Leaders,2026-09-07,sonar
-2,Salesforce,salesforce.com,35.5,43.8,25.0,37.5,85,Visibility gap,2026-09-07,sonar
-3,HubSpot,hubspot.com,29.1,25.0,25.0,37.5,82,Visibility gap,2026-09-07,sonar
-4,Notion,notion.so,27.2,37.5,18.8,25.0,78,Visibility gap,2026-09-07,sonar
-5,Figma,figma.com,18.7,12.5,12.5,31.2,74,Visibility gap,2026-09-07,sonar
-6,GitHub Copilot,github.com,16.5,6.2,12.5,31.2,76,Visibility gap,2026-09-07,sonar
-7,Airtable,airtable.com,14.6,18.8,12.5,12.5,68,Visibility gap,2026-09-07,sonar
-8,ClickUp,clickup.com,14.6,12.5,12.5,18.8,66,Visibility gap,2026-09-07,sonar
-9,Zapier,zapier.com,14.5,12.5,25.0,6.2,72,Visibility gap,2026-09-07,sonar
-10,Retool,retool.com,12.5,12.5,12.5,12.5,62,Low performance,2026-09-07,sonar
-11,Miro,miro.com,12.5,12.5,12.5,12.5,67,Visibility gap,2026-09-07,sonar
-12,Linear,linear.app,12.4,6.2,12.5,18.8,63,Low performance,2026-09-07,sonar
-13,Asana,asana.com,10.4,6.2,6.2,18.8,69,Visibility gap,2026-09-07,sonar
-14,Monday.com,monday.com,8.3,6.2,6.2,12.5,71,Visibility gap,2026-09-07,sonar
-15,Intercom,intercom.com,8.3,12.5,6.2,6.2,70,Visibility gap,2026-09-07,sonar
-16,Jasper,jasper.ai,6.2,6.2,6.2,6.2,61,Low performance,2026-09-07,sonar
-17,Amplitude,amplitude.com,6.2,6.2,6.2,6.2,60,Low performance,2026-09-07,sonar
-18,Otter.ai,otter.ai,4.2,6.2,6.2,0.0,52,Low performance,2026-09-07,sonar
-19,Webflow,webflow.com,2.1,6.2,0.0,0.0,64,Low performance,2026-09-07,sonar
-20,Copy.ai,copy.ai,2.0,0.0,0.0,6.2,55,Low performance,2026-09-07,sonar
+1,Slack,slack.com,48.0,50.0,43.8,50.0,70,Visibility gap,2026-09-28,sonar
+2,Salesforce,salesforce.com,39.6,43.8,18.8,56.2,85,Visibility gap,2026-09-28,sonar
+3,Notion,notion.so,37.5,37.5,31.2,43.8,78,Visibility gap,2026-09-28,sonar
+4,HubSpot,hubspot.com,29.2,25.0,18.8,43.8,82,Visibility gap,2026-09-28,sonar
+5,GitHub Copilot,github.com,29.1,18.8,18.8,50.0,76,Visibility gap,2026-09-28,sonar
+6,Airtable,airtable.com,18.8,18.8,18.8,18.8,68,Visibility gap,2026-09-28,sonar
+7,Figma,figma.com,14.6,12.5,12.5,18.8,74,Visibility gap,2026-09-28,sonar
+8,Linear,linear.app,12.5,12.5,6.2,18.8,63,Low performance,2026-09-28,sonar
+9,Retool,retool.com,12.5,12.5,12.5,12.5,62,Low performance,2026-09-28,sonar
+10,Miro,miro.com,12.5,12.5,12.5,12.5,67,Visibility gap,2026-09-28,sonar
+11,Asana,asana.com,10.4,12.5,6.2,12.5,69,Visibility gap,2026-09-28,sonar
+12,Monday.com,monday.com,10.4,6.2,6.2,18.8,71,Visibility gap,2026-09-28,sonar
+13,ClickUp,clickup.com,10.4,12.5,6.2,12.5,66,Visibility gap,2026-09-28,sonar
+14,Intercom,intercom.com,10.4,12.5,12.5,6.2,70,Visibility gap,2026-09-28,sonar
+15,Zapier,zapier.com,8.3,12.5,6.2,6.2,72,Visibility gap,2026-09-28,sonar
+16,Amplitude,amplitude.com,8.3,12.5,6.2,6.2,60,Low performance,2026-09-28,sonar
+17,Jasper,jasper.ai,6.2,6.2,6.2,6.2,61,Low performance,2026-09-28,sonar
+18,Otter.ai,otter.ai,6.2,6.2,6.2,6.2,52,Low performance,2026-09-28,sonar
+19,Webflow,webflow.com,4.2,6.2,6.2,0.0,64,Low performance,2026-09-28,sonar
+20,Copy.ai,copy.ai,4.1,0.0,6.2,6.2,55,Low performance,2026-09-28,sonar
