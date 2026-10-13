@@ -1,6 +1,6 @@
 {
   "source": "DABYTE rankings, dabyte.ai",
-  "measured_at": "2026-09-28",
+  "measured_at": "2026-10-12",
   "engines": [
     "openai",
     "perplexity",
@@ -17,35 +17,35 @@
         {
           "rank": 1,
           "brand": "Slack",
-          "value": "48.0%",
-          "visibility_score": 48.0,
+          "value": "35.5%",
+          "visibility_score": 35.5,
           "per_engine": {
             "openai": 50.0,
-            "perplexity": 43.8,
+            "perplexity": 6.2,
             "gemini": 50.0
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 2,
-          "brand": "Salesforce",
-          "value": "39.6%",
-          "visibility_score": 39.6,
+          "brand": "Notion",
+          "value": "31.3%",
+          "visibility_score": 31.3,
           "per_engine": {
-            "openai": 43.8,
-            "perplexity": 18.8,
-            "gemini": 56.2
+            "openai": 37.5,
+            "perplexity": 25.0,
+            "gemini": 31.2
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 3,
-          "brand": "Notion",
-          "value": "37.5%",
-          "visibility_score": 37.5,
+          "brand": "Salesforce",
+          "value": "31.3%",
+          "visibility_score": 31.3,
           "per_engine": {
             "openai": 37.5,
-            "perplexity": 31.2,
+            "perplexity": 12.5,
             "gemini": 43.8
           },
           "quadrant": "Visibility gap"
@@ -53,42 +53,30 @@
         {
           "rank": 4,
           "brand": "HubSpot",
-          "value": "29.2%",
-          "visibility_score": 29.2,
+          "value": "23.0%",
+          "visibility_score": 23.0,
           "per_engine": {
             "openai": 25.0,
             "perplexity": 18.8,
-            "gemini": 43.8
+            "gemini": 25.0
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 5,
           "brand": "GitHub Copilot",
-          "value": "29.1%",
-          "visibility_score": 29.1,
+          "value": "22.9%",
+          "visibility_score": 22.9,
           "per_engine": {
             "openai": 18.8,
-            "perplexity": 18.8,
-            "gemini": 50.0
+            "perplexity": 6.2,
+            "gemini": 43.8
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 6,
-          "brand": "Airtable",
-          "value": "18.8%",
-          "visibility_score": 18.8,
-          "per_engine": {
-            "openai": 18.8,
-            "perplexity": 18.8,
-            "gemini": 18.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 7,
-          "brand": "Figma",
+          "brand": "Miro",
           "value": "14.6%",
           "visibility_score": 14.6,
           "per_engine": {
@@ -99,8 +87,20 @@
           "quadrant": "Visibility gap"
         },
         {
+          "rank": 7,
+          "brand": "Zapier",
+          "value": "12.6%",
+          "visibility_score": 12.6,
+          "per_engine": {
+            "openai": 25.0,
+            "perplexity": 6.2,
+            "gemini": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
           "rank": 8,
-          "brand": "Linear",
+          "brand": "Airtable",
           "value": "12.5%",
           "visibility_score": 12.5,
           "per_engine": {
@@ -108,11 +108,11 @@
             "perplexity": 6.2,
             "gemini": 18.8
           },
-          "quadrant": "Low performance"
+          "quadrant": "Visibility gap"
         },
         {
           "rank": 9,
-          "brand": "Miro",
+          "brand": "Figma",
           "value": "12.5%",
           "visibility_score": 12.5,
           "per_engine": {
@@ -124,13 +124,13 @@
         },
         {
           "rank": 10,
-          "brand": "Retool",
+          "brand": "Linear",
           "value": "12.5%",
           "visibility_score": 12.5,
           "per_engine": {
             "openai": 12.5,
-            "perplexity": 12.5,
-            "gemini": 12.5
+            "perplexity": 6.2,
+            "gemini": 18.8
           },
           "quadrant": "Low performance"
         },
@@ -160,18 +160,6 @@
         },
         {
           "rank": 13,
-          "brand": "Intercom",
-          "value": "10.4%",
-          "visibility_score": 10.4,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5,
-            "gemini": 6.2
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 14,
           "brand": "Monday.com",
           "value": "10.4%",
           "visibility_score": 10.4,
@@ -183,8 +171,20 @@
           "quadrant": "Visibility gap"
         },
         {
+          "rank": 14,
+          "brand": "Intercom",
+          "value": "8.3%",
+          "visibility_score": 8.3,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 6.2,
+            "gemini": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
           "rank": 15,
-          "brand": "Amplitude",
+          "brand": "Retool",
           "value": "8.3%",
           "visibility_score": 8.3,
           "per_engine": {
@@ -196,15 +196,15 @@
         },
         {
           "rank": 16,
-          "brand": "Zapier",
-          "value": "8.3%",
-          "visibility_score": 8.3,
+          "brand": "Amplitude",
+          "value": "6.2%",
+          "visibility_score": 6.2,
           "per_engine": {
-            "openai": 12.5,
+            "openai": 6.2,
             "perplexity": 6.2,
             "gemini": 6.2
           },
-          "quadrant": "Visibility gap"
+          "quadrant": "Low performance"
         },
         {
           "rank": 17,
@@ -232,18 +232,6 @@
         },
         {
           "rank": 19,
-          "brand": "Webflow",
-          "value": "4.2%",
-          "visibility_score": 4.2,
-          "per_engine": {
-            "openai": 6.2,
-            "perplexity": 6.2,
-            "gemini": 0.0
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 20,
           "brand": "Copy.ai",
           "value": "4.1%",
           "visibility_score": 4.1,
@@ -251,6 +239,18 @@
             "openai": 0.0,
             "perplexity": 6.2,
             "gemini": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 20,
+          "brand": "Webflow",
+          "value": "2.1%",
+          "visibility_score": 2.1,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 0.0,
+            "gemini": 0.0
           },
           "quadrant": "Low performance"
         }
@@ -263,8 +263,20 @@
       "items": [
         {
           "rank": 1,
-          "brand": "Zapier",
-          "value": "64",
+          "brand": "Webflow",
+          "value": "62",
+          "visibility_score": 2.1,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 0.0,
+            "gemini": 0.0
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 2,
+          "brand": "Intercom",
+          "value": "62",
           "visibility_score": 8.3,
           "per_engine": {
             "openai": 12.5,
@@ -274,7 +286,19 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "brand": "Figma",
+          "value": "62",
+          "visibility_score": 12.5,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 12.5,
+            "gemini": 12.5
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 4,
           "brand": "Monday.com",
           "value": "61",
           "visibility_score": 10.4,
@@ -286,43 +310,31 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 3,
-          "brand": "Webflow",
-          "value": "60",
-          "visibility_score": 4.2,
+          "rank": 5,
+          "brand": "Zapier",
+          "value": "59",
+          "visibility_score": 12.6,
           "per_engine": {
-            "openai": 6.2,
+            "openai": 25.0,
             "perplexity": 6.2,
-            "gemini": 0.0
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 4,
-          "brand": "Intercom",
-          "value": "60",
-          "visibility_score": 10.4,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5,
             "gemini": 6.2
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 5,
-          "brand": "Figma",
+          "rank": 6,
+          "brand": "HubSpot",
           "value": "59",
-          "visibility_score": 14.6,
+          "visibility_score": 23.0,
           "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5,
-            "gemini": 18.8
+            "openai": 25.0,
+            "perplexity": 18.8,
+            "gemini": 25.0
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 6,
+          "rank": 7,
           "brand": "Asana",
           "value": "59",
           "visibility_score": 10.4,
@@ -334,7 +346,7 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 7,
+          "rank": 8,
           "brand": "ClickUp",
           "value": "56",
           "visibility_score": 10.4,
@@ -346,7 +358,19 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 8,
+          "rank": 9,
+          "brand": "Airtable",
+          "value": "56",
+          "visibility_score": 12.5,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 6.2,
+            "gemini": 18.8
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 10,
           "brand": "Jasper",
           "value": "55",
           "visibility_score": 6.2,
@@ -358,33 +382,21 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 9,
-          "brand": "Miro",
-          "value": "54",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5,
-            "gemini": 12.5
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 10,
-          "brand": "HubSpot",
-          "value": "53",
-          "visibility_score": 29.2,
-          "per_engine": {
-            "openai": 25.0,
-            "perplexity": 18.8,
-            "gemini": 43.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
           "rank": 11,
           "brand": "Amplitude",
-          "value": "52",
+          "value": "54",
+          "visibility_score": 6.2,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 6.2,
+            "gemini": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 12,
+          "brand": "Retool",
+          "value": "54",
           "visibility_score": 8.3,
           "per_engine": {
             "openai": 12.5,
@@ -394,7 +406,43 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 12,
+          "rank": 13,
+          "brand": "Salesforce",
+          "value": "54",
+          "visibility_score": 31.3,
+          "per_engine": {
+            "openai": 37.5,
+            "perplexity": 12.5,
+            "gemini": 43.8
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 14,
+          "brand": "GitHub Copilot",
+          "value": "53",
+          "visibility_score": 22.9,
+          "per_engine": {
+            "openai": 18.8,
+            "perplexity": 6.2,
+            "gemini": 43.8
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 15,
+          "brand": "Miro",
+          "value": "52",
+          "visibility_score": 14.6,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 12.5,
+            "gemini": 18.8
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 16,
           "brand": "Copy.ai",
           "value": "51",
           "visibility_score": 4.1,
@@ -406,7 +454,7 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 13,
+          "rank": 17,
           "brand": "Linear",
           "value": "50",
           "visibility_score": 12.5,
@@ -418,43 +466,19 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 14,
-          "brand": "Retool",
-          "value": "50",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5,
-            "gemini": 12.5
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 15,
-          "brand": "Airtable",
-          "value": "49",
-          "visibility_score": 18.8,
-          "per_engine": {
-            "openai": 18.8,
-            "perplexity": 18.8,
-            "gemini": 18.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 16,
-          "brand": "GitHub Copilot",
+          "rank": 18,
+          "brand": "Notion",
           "value": "47",
-          "visibility_score": 29.1,
+          "visibility_score": 31.3,
           "per_engine": {
-            "openai": 18.8,
-            "perplexity": 18.8,
-            "gemini": 50.0
+            "openai": 37.5,
+            "perplexity": 25.0,
+            "gemini": 31.2
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 17,
+          "rank": 19,
           "brand": "Otter.ai",
           "value": "46",
           "visibility_score": 6.2,
@@ -466,37 +490,13 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 18,
-          "brand": "Salesforce",
-          "value": "45",
-          "visibility_score": 39.6,
-          "per_engine": {
-            "openai": 43.8,
-            "perplexity": 18.8,
-            "gemini": 56.2
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 19,
-          "brand": "Notion",
-          "value": "40",
-          "visibility_score": 37.5,
-          "per_engine": {
-            "openai": 37.5,
-            "perplexity": 31.2,
-            "gemini": 43.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
           "rank": 20,
           "brand": "Slack",
-          "value": "22",
-          "visibility_score": 48.0,
+          "value": "34",
+          "visibility_score": 35.5,
           "per_engine": {
             "openai": 50.0,
-            "perplexity": 43.8,
+            "perplexity": 6.2,
             "gemini": 50.0
           },
           "quadrant": "Visibility gap"
@@ -510,24 +510,24 @@
       "items": [
         {
           "rank": 1,
-          "brand": "Zapier",
-          "value": "-14.6",
-          "visibility_score": 8.3,
+          "brand": "Slack",
+          "value": "-12.5",
+          "visibility_score": 35.5,
           "per_engine": {
-            "openai": 12.5,
+            "openai": 50.0,
             "perplexity": 6.2,
-            "gemini": 6.2
+            "gemini": 50.0
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 2,
-          "brand": "Notion",
-          "value": "+10.4",
-          "visibility_score": 37.5,
+          "brand": "Salesforce",
+          "value": "-8.3",
+          "visibility_score": 31.3,
           "per_engine": {
             "openai": 37.5,
-            "perplexity": 31.2,
+            "perplexity": 12.5,
             "gemini": 43.8
           },
           "quadrant": "Visibility gap"
@@ -535,11 +535,11 @@
         {
           "rank": 3,
           "brand": "Airtable",
-          "value": "+8.4",
-          "visibility_score": 18.8,
+          "value": "-6.3",
+          "visibility_score": 12.5,
           "per_engine": {
-            "openai": 18.8,
-            "perplexity": 18.8,
+            "openai": 12.5,
+            "perplexity": 6.2,
             "gemini": 18.8
           },
           "quadrant": "Visibility gap"
@@ -547,115 +547,67 @@
         {
           "rank": 4,
           "brand": "GitHub Copilot",
-          "value": "+8.3",
-          "visibility_score": 29.1,
+          "value": "-6.2",
+          "visibility_score": 22.9,
           "per_engine": {
             "openai": 18.8,
-            "perplexity": 18.8,
-            "gemini": 50.0
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 5,
-          "brand": "Monday.com",
-          "value": "-6.2",
-          "visibility_score": 10.4,
-          "per_engine": {
-            "openai": 6.2,
             "perplexity": 6.2,
-            "gemini": 18.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 6,
-          "brand": "Slack",
-          "value": "+4.3",
-          "visibility_score": 48.0,
-          "per_engine": {
-            "openai": 50.0,
-            "perplexity": 43.8,
-            "gemini": 50.0
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 7,
-          "brand": "ClickUp",
-          "value": "-4.2",
-          "visibility_score": 10.4,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 6.2,
-            "gemini": 12.5
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 8,
-          "brand": "HubSpot",
-          "value": "-4.0",
-          "visibility_score": 29.2,
-          "per_engine": {
-            "openai": 25.0,
-            "perplexity": 18.8,
             "gemini": 43.8
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 9,
-          "brand": "Asana",
-          "value": "+2.1",
-          "visibility_score": 10.4,
+          "rank": 5,
+          "brand": "HubSpot",
+          "value": "-6.2",
+          "visibility_score": 23.0,
           "per_engine": {
-            "openai": 12.5,
-            "perplexity": 6.2,
-            "gemini": 12.5
+            "openai": 25.0,
+            "perplexity": 18.8,
+            "gemini": 25.0
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 10,
-          "brand": "Copy.ai",
-          "value": "+2.1",
-          "visibility_score": 4.1,
+          "rank": 6,
+          "brand": "Notion",
+          "value": "-6.2",
+          "visibility_score": 31.3,
           "per_engine": {
-            "openai": 0.0,
+            "openai": 37.5,
+            "perplexity": 25.0,
+            "gemini": 31.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 7,
+          "brand": "Zapier",
+          "value": "+4.3",
+          "visibility_score": 12.6,
+          "per_engine": {
+            "openai": 25.0,
+            "perplexity": 6.2,
+            "gemini": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 8,
+          "brand": "Retool",
+          "value": "-4.2",
+          "visibility_score": 8.3,
+          "per_engine": {
+            "openai": 12.5,
             "perplexity": 6.2,
             "gemini": 6.2
           },
           "quadrant": "Low performance"
         },
         {
-          "rank": 11,
-          "brand": "Retool",
-          "value": "+2.1",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5,
-            "gemini": 12.5
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 12,
-          "brand": "Salesforce",
-          "value": "+2.1",
-          "visibility_score": 39.6,
-          "per_engine": {
-            "openai": 43.8,
-            "perplexity": 18.8,
-            "gemini": 56.2
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 13,
-          "brand": "Otter.ai",
-          "value": "+2.0",
+          "rank": 9,
+          "brand": "Amplitude",
+          "value": "-2.1",
           "visibility_score": 6.2,
           "per_engine": {
             "openai": 6.2,
@@ -665,45 +617,33 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 14,
-          "brand": "Intercom",
-          "value": "-0.1",
-          "visibility_score": 10.4,
+          "rank": 10,
+          "brand": "Figma",
+          "value": "-2.1",
+          "visibility_score": 12.5,
           "per_engine": {
             "openai": 12.5,
             "perplexity": 12.5,
-            "gemini": 6.2
+            "gemini": 12.5
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 15,
-          "brand": "Linear",
-          "value": "+0.1",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 6.2,
-            "gemini": 18.8
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 16,
-          "brand": "Amplitude",
-          "value": "+0.0",
+          "rank": 11,
+          "brand": "Intercom",
+          "value": "-2.1",
           "visibility_score": 8.3,
           "per_engine": {
             "openai": 12.5,
             "perplexity": 6.2,
             "gemini": 6.2
           },
-          "quadrant": "Low performance"
+          "quadrant": "Visibility gap"
         },
         {
-          "rank": 17,
-          "brand": "Figma",
-          "value": "+0.0",
+          "rank": 12,
+          "brand": "Miro",
+          "value": "+2.1",
           "visibility_score": 14.6,
           "per_engine": {
             "openai": 12.5,
@@ -713,7 +653,55 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 18,
+          "rank": 13,
+          "brand": "Webflow",
+          "value": "-2.1",
+          "visibility_score": 2.1,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 0.0,
+            "gemini": 0.0
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 14,
+          "brand": "Asana",
+          "value": "+0.0",
+          "visibility_score": 10.4,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 6.2,
+            "gemini": 12.5
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 15,
+          "brand": "ClickUp",
+          "value": "+0.0",
+          "visibility_score": 10.4,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 6.2,
+            "gemini": 12.5
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 16,
+          "brand": "Copy.ai",
+          "value": "+0.0",
+          "visibility_score": 4.1,
+          "per_engine": {
+            "openai": 0.0,
+            "perplexity": 6.2,
+            "gemini": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 17,
           "brand": "Jasper",
           "value": "+0.0",
           "visibility_score": 6.2,
@@ -725,26 +713,38 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 19,
-          "brand": "Miro",
+          "rank": 18,
+          "brand": "Linear",
           "value": "+0.0",
           "visibility_score": 12.5,
           "per_engine": {
             "openai": 12.5,
-            "perplexity": 12.5,
-            "gemini": 12.5
+            "perplexity": 6.2,
+            "gemini": 18.8
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 19,
+          "brand": "Monday.com",
+          "value": "+0.0",
+          "visibility_score": 10.4,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 6.2,
+            "gemini": 18.8
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 20,
-          "brand": "Webflow",
+          "brand": "Otter.ai",
           "value": "+0.0",
-          "visibility_score": 4.2,
+          "visibility_score": 6.2,
           "per_engine": {
             "openai": 6.2,
             "perplexity": 6.2,
-            "gemini": 0.0
+            "gemini": 6.2
           },
           "quadrant": "Low performance"
         }
