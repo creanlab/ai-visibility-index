@@ -2,7 +2,7 @@
   "dataset_name": "AI Visibility Index — SaaS & AI Tools",
   "niche": "saas",
   "niche_title": "SaaS & AI Tools",
-  "measured_at": "2026-10-12",
+  "measured_at": "2026-10-19",
   "method": "sonar",
   "engines": [
     "openai",
@@ -31,67 +31,67 @@
   "methodology": "AI Visibility Index measures how often each brand is cited in AI-assistant answers across a fixed panel of 16 category prompts, on 3 engines (openai, perplexity, gemini). Visibility score = share of panel prompts where the brand is mentioned, averaged across engines (engine-weighted). Re-measured weekly. Paid placements never affect scores (editorial firewall).",
   "entries": [
     {
-      "brand": "Slack",
-      "domain": "slack.com",
-      "visibility_score": 35.5,
-      "per_engine": {
-        "openai": 50.0,
-        "perplexity": 6.2,
-        "gemini": 50.0
-      },
-      "commercial_intent": 70,
-      "quadrant": "Visibility gap",
-      "is_client": false,
-      "rank": 1,
-      "delta": -12.5,
-      "rank_delta": 0
-    },
-    {
       "brand": "Notion",
       "domain": "notion.so",
-      "visibility_score": 31.3,
+      "visibility_score": 35.5,
       "per_engine": {
-        "openai": 37.5,
+        "openai": 43.8,
         "perplexity": 25.0,
-        "gemini": 31.2
+        "gemini": 37.5
       },
       "commercial_intent": 78,
       "quadrant": "Visibility gap",
       "is_client": false,
-      "rank": 2,
-      "delta": -6.2,
+      "rank": 1,
+      "delta": 4.2,
       "rank_delta": 1
     },
     {
       "brand": "Salesforce",
       "domain": "salesforce.com",
-      "visibility_score": 31.3,
+      "visibility_score": 35.5,
       "per_engine": {
-        "openai": 37.5,
-        "perplexity": 12.5,
+        "openai": 43.8,
+        "perplexity": 18.8,
         "gemini": 43.8
       },
       "commercial_intent": 85,
       "quadrant": "Visibility gap",
       "is_client": false,
+      "rank": 2,
+      "delta": 4.2,
+      "rank_delta": 1
+    },
+    {
+      "brand": "Slack",
+      "domain": "slack.com",
+      "visibility_score": 35.4,
+      "per_engine": {
+        "openai": 37.5,
+        "perplexity": 6.2,
+        "gemini": 62.5
+      },
+      "commercial_intent": 70,
+      "quadrant": "Visibility gap",
+      "is_client": false,
       "rank": 3,
-      "delta": -8.3,
-      "rank_delta": -1
+      "delta": -0.1,
+      "rank_delta": -2
     },
     {
       "brand": "HubSpot",
       "domain": "hubspot.com",
-      "visibility_score": 23.0,
+      "visibility_score": 27.1,
       "per_engine": {
         "openai": 25.0,
         "perplexity": 18.8,
-        "gemini": 25.0
+        "gemini": 37.5
       },
       "commercial_intent": 82,
       "quadrant": "Visibility gap",
       "is_client": false,
       "rank": 4,
-      "delta": -6.2,
+      "delta": 4.1,
       "rank_delta": 0
     },
     {
@@ -100,58 +100,58 @@
       "visibility_score": 22.9,
       "per_engine": {
         "openai": 18.8,
-        "perplexity": 6.2,
-        "gemini": 43.8
+        "perplexity": 12.5,
+        "gemini": 37.5
       },
       "commercial_intent": 76,
       "quadrant": "Visibility gap",
       "is_client": false,
       "rank": 5,
-      "delta": -6.2,
+      "delta": 0.0,
       "rank_delta": 0
     },
     {
-      "brand": "Miro",
-      "domain": "miro.com",
+      "brand": "Figma",
+      "domain": "figma.com",
       "visibility_score": 14.6,
       "per_engine": {
         "openai": 12.5,
         "perplexity": 12.5,
         "gemini": 18.8
       },
-      "commercial_intent": 67,
+      "commercial_intent": 74,
       "quadrant": "Visibility gap",
       "is_client": false,
       "rank": 6,
       "delta": 2.1,
-      "rank_delta": 4
+      "rank_delta": 2
+    },
+    {
+      "brand": "Airtable",
+      "domain": "airtable.com",
+      "visibility_score": 12.6,
+      "per_engine": {
+        "openai": 18.8,
+        "perplexity": 6.2,
+        "gemini": 12.5
+      },
+      "commercial_intent": 68,
+      "quadrant": "Visibility gap",
+      "is_client": false,
+      "rank": 7,
+      "delta": 0.1,
+      "rank_delta": 2
     },
     {
       "brand": "Zapier",
       "domain": "zapier.com",
-      "visibility_score": 12.6,
+      "visibility_score": 10.5,
       "per_engine": {
-        "openai": 25.0,
+        "openai": 18.8,
         "perplexity": 6.2,
         "gemini": 6.2
       },
       "commercial_intent": 72,
-      "quadrant": "Visibility gap",
-      "is_client": false,
-      "rank": 7,
-      "delta": 4.3,
-      "rank_delta": 8
-    },
-    {
-      "brand": "Figma",
-      "domain": "figma.com",
-      "visibility_score": 12.5,
-      "per_engine": {
-        "openai": 12.5,
-        "perplexity": 12.5,
-        "gemini": 12.5
-      },
-      "commercial_intent": 74,
       "quadrant": "Visibility gap",
       "is_client": false,
       "rank": 8,
@@ -159,52 +159,20 @@
       "rank_delta": -1
     },
     {
-      "brand": "Airtable",
-      "domain": "airtable.com",
-      "visibility_score": 12.5,
-      "per_engine": {
-        "openai": 12.5,
-        "perplexity": 6.2,
-        "gemini": 18.8
-      },
-      "commercial_intent": 68,
-      "quadrant": "Visibility gap",
-      "is_client": false,
-      "rank": 9,
-      "delta": -6.3,
-      "rank_delta": -3
-    },
-    {
-      "brand": "Linear",
-      "domain": "linear.app",
-      "visibility_score": 12.5,
-      "per_engine": {
-        "openai": 12.5,
-        "perplexity": 6.2,
-        "gemini": 18.8
-      },
-      "commercial_intent": 63,
-      "quadrant": "Low performance",
-      "is_client": false,
-      "rank": 10,
-      "delta": 0.0,
-      "rank_delta": -2
-    },
-    {
       "brand": "Asana",
       "domain": "asana.com",
       "visibility_score": 10.4,
       "per_engine": {
-        "openai": 12.5,
+        "openai": 6.2,
         "perplexity": 6.2,
-        "gemini": 12.5
+        "gemini": 18.8
       },
       "commercial_intent": 69,
       "quadrant": "Visibility gap",
       "is_client": false,
-      "rank": 11,
+      "rank": 9,
       "delta": 0.0,
-      "rank_delta": 0
+      "rank_delta": 2
     },
     {
       "brand": "Monday.com",
@@ -212,47 +180,63 @@
       "visibility_score": 10.4,
       "per_engine": {
         "openai": 6.2,
-        "perplexity": 6.2,
-        "gemini": 18.8
+        "perplexity": 12.5,
+        "gemini": 12.5
       },
       "commercial_intent": 71,
       "quadrant": "Visibility gap",
       "is_client": false,
-      "rank": 12,
+      "rank": 10,
       "delta": 0.0,
-      "rank_delta": 0
+      "rank_delta": 2
     },
     {
-      "brand": "ClickUp",
-      "domain": "clickup.com",
+      "brand": "Linear",
+      "domain": "linear.app",
+      "visibility_score": 10.4,
+      "per_engine": {
+        "openai": 6.2,
+        "perplexity": 6.2,
+        "gemini": 18.8
+      },
+      "commercial_intent": 63,
+      "quadrant": "Low performance",
+      "is_client": false,
+      "rank": 11,
+      "delta": -2.1,
+      "rank_delta": -1
+    },
+    {
+      "brand": "Retool",
+      "domain": "retool.com",
       "visibility_score": 10.4,
       "per_engine": {
         "openai": 12.5,
         "perplexity": 6.2,
         "gemini": 12.5
       },
-      "commercial_intent": 66,
-      "quadrant": "Visibility gap",
-      "is_client": false,
-      "rank": 13,
-      "delta": 0.0,
-      "rank_delta": 0
-    },
-    {
-      "brand": "Retool",
-      "domain": "retool.com",
-      "visibility_score": 8.3,
-      "per_engine": {
-        "openai": 12.5,
-        "perplexity": 6.2,
-        "gemini": 6.2
-      },
       "commercial_intent": 62,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 14,
+      "rank": 12,
+      "delta": 2.1,
+      "rank_delta": 2
+    },
+    {
+      "brand": "Miro",
+      "domain": "miro.com",
+      "visibility_score": 10.4,
+      "per_engine": {
+        "openai": 12.5,
+        "perplexity": 6.2,
+        "gemini": 12.5
+      },
+      "commercial_intent": 67,
+      "quadrant": "Visibility gap",
+      "is_client": false,
+      "rank": 13,
       "delta": -4.2,
-      "rank_delta": -5
+      "rank_delta": -7
     },
     {
       "brand": "Intercom",
@@ -266,9 +250,25 @@
       "commercial_intent": 70,
       "quadrant": "Visibility gap",
       "is_client": false,
+      "rank": 14,
+      "delta": 0.0,
+      "rank_delta": 1
+    },
+    {
+      "brand": "ClickUp",
+      "domain": "clickup.com",
+      "visibility_score": 6.2,
+      "per_engine": {
+        "openai": 6.2,
+        "perplexity": 6.2,
+        "gemini": 6.2
+      },
+      "commercial_intent": 66,
+      "quadrant": "Visibility gap",
+      "is_client": false,
       "rank": 15,
-      "delta": -2.1,
-      "rank_delta": -1
+      "delta": -4.2,
+      "rank_delta": -2
     },
     {
       "brand": "Jasper",
@@ -284,7 +284,7 @@
       "is_client": false,
       "rank": 16,
       "delta": 0.0,
-      "rank_delta": 1
+      "rank_delta": 0
     },
     {
       "brand": "Amplitude",
@@ -299,8 +299,8 @@
       "quadrant": "Low performance",
       "is_client": false,
       "rank": 17,
-      "delta": -2.1,
-      "rank_delta": -1
+      "delta": 0.0,
+      "rank_delta": 0
     },
     {
       "brand": "Otter.ai",
@@ -319,6 +319,22 @@
       "rank_delta": 0
     },
     {
+      "brand": "Webflow",
+      "domain": "webflow.com",
+      "visibility_score": 4.2,
+      "per_engine": {
+        "openai": 6.2,
+        "perplexity": 0.0,
+        "gemini": 6.2
+      },
+      "commercial_intent": 64,
+      "quadrant": "Low performance",
+      "is_client": false,
+      "rank": 19,
+      "delta": 2.1,
+      "rank_delta": 1
+    },
+    {
       "brand": "Copy.ai",
       "domain": "copy.ai",
       "visibility_score": 4.1,
@@ -330,26 +346,10 @@
       "commercial_intent": 55,
       "quadrant": "Low performance",
       "is_client": false,
-      "rank": 19,
-      "delta": 0.0,
-      "rank_delta": 1
-    },
-    {
-      "brand": "Webflow",
-      "domain": "webflow.com",
-      "visibility_score": 2.1,
-      "per_engine": {
-        "openai": 6.2,
-        "perplexity": 0.0,
-        "gemini": 0.0
-      },
-      "commercial_intent": 64,
-      "quadrant": "Low performance",
-      "is_client": false,
       "rank": 20,
-      "delta": -2.1,
+      "delta": 0.0,
       "rank_delta": -1
     }
   ],
-  "previous_measured_at": "2026-09-28"
+  "previous_measured_at": "2026-10-12"
 }

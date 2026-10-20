@@ -11,7 +11,8 @@
     "2026-08-31",
     "2026-09-24",
     "2026-09-28",
-    "2026-10-12"
+    "2026-10-12",
+    "2026-10-19"
   ],
   "panel_versions": {
     "2026-07-28": 1,
@@ -23,7 +24,8 @@
     "2026-08-31": 3,
     "2026-09-24": 3,
     "2026-09-28": 3,
-    "2026-10-12": 3
+    "2026-10-12": 3,
+    "2026-10-19": 3
   },
   "note": "Full published history of share-of-answer per brand. Each measurement is also available verbatim at /archive/<date>.json. Values are the percentage of the fixed prompt panel in which an engine named the brand. `series` is the comparable run of the current panel version only; `series_full` carries every published point with its panel_version — do not chart across version breaks.",
   "license": "CC-BY-4.0",
@@ -56,6 +58,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 10.4
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 8.3
       }
     ],
     "Arbitrum": [
@@ -86,6 +92,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 25.0
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 27.1
       }
     ],
     "Binance": [
@@ -116,6 +126,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 31.2
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 33.3
       }
     ],
     "CertiK": [
@@ -145,6 +159,10 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 4.2
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 4.2
       }
     ],
@@ -176,6 +194,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2
       }
     ],
     "CoinGecko": [
@@ -206,6 +228,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 8.3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.7
       }
     ],
     "CoinMarketCap": [
@@ -235,6 +261,10 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 10.4
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 10.4
       }
     ],
@@ -266,6 +296,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 12.5
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.6
       }
     ],
     "Coinbase": [
@@ -296,6 +330,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 45.8
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 39.7
       }
     ],
     "DefiLlama": [
@@ -325,6 +363,10 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 4.2
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 4.2
       }
     ],
@@ -356,6 +398,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 0.0
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 2.1
       }
     ],
     "Etherscan": [
@@ -386,6 +432,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 2.1
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 2.0
       }
     ],
     "Koinly": [
@@ -416,6 +466,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 12.5
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.6
       }
     ],
     "Kraken": [
@@ -446,6 +500,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 27.1
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 31.3
       }
     ],
     "Ledger": [
@@ -476,6 +534,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 20.8
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 22.9
       }
     ],
     "Lido": [
@@ -506,6 +568,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 8.3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2
       }
     ],
     "MetaMask": [
@@ -536,6 +602,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 18.7
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 10.5
       }
     ],
     "MoonPay": [
@@ -565,6 +635,10 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 2.0
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 2.0
       }
     ],
@@ -596,6 +670,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 8.3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2
       }
     ],
     "OpenZeppelin": [
@@ -626,6 +704,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 10.4
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2
       }
     ],
     "Phantom": [
@@ -656,6 +738,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 12.4
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 10.4
       }
     ],
     "Polygon": [
@@ -686,6 +772,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 18.8
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 18.9
       }
     ],
     "Trezor": [
@@ -715,6 +805,10 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 14.6
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 14.6
       }
     ],
@@ -746,6 +840,10 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 18.7
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.5
       }
     ]
   },
@@ -800,6 +898,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 10.4,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 8.3,
+        "panel_version": 3
       }
     ],
     "Arbitrum": [
@@ -851,6 +954,11 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 25.0,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 27.1,
         "panel_version": 3
       }
     ],
@@ -904,6 +1012,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 31.2,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 33.3,
+        "panel_version": 3
       }
     ],
     "CertiK": [
@@ -954,6 +1067,11 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 4.2,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 4.2,
         "panel_version": 3
       }
@@ -1008,6 +1126,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 6.2,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2,
+        "panel_version": 3
       }
     ],
     "CoinGecko": [
@@ -1060,6 +1183,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 8.3,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.7,
+        "panel_version": 3
       }
     ],
     "CoinMarketCap": [
@@ -1110,6 +1238,11 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 10.4,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 10.4,
         "panel_version": 3
       }
@@ -1164,6 +1297,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 12.5,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.6,
+        "panel_version": 3
       }
     ],
     "Coinbase": [
@@ -1216,6 +1354,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 45.8,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 39.7,
+        "panel_version": 3
       }
     ],
     "DefiLlama": [
@@ -1266,6 +1409,11 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 4.2,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 4.2,
         "panel_version": 3
       }
@@ -1320,6 +1468,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 0.0,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 2.1,
+        "panel_version": 3
       }
     ],
     "Etherscan": [
@@ -1371,6 +1524,11 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 2.1,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 2.0,
         "panel_version": 3
       }
     ],
@@ -1424,6 +1582,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 12.5,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.6,
+        "panel_version": 3
       }
     ],
     "Kraken": [
@@ -1475,6 +1638,11 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 27.1,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 31.3,
         "panel_version": 3
       }
     ],
@@ -1528,6 +1696,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 20.8,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 22.9,
+        "panel_version": 3
       }
     ],
     "Lido": [
@@ -1579,6 +1752,11 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 8.3,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2,
         "panel_version": 3
       }
     ],
@@ -1632,6 +1810,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 18.7,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 10.5,
+        "panel_version": 3
       }
     ],
     "MoonPay": [
@@ -1682,6 +1865,11 @@
       },
       {
         "measured_at": "2026-10-12",
+        "visibility_score": 2.0,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
         "visibility_score": 2.0,
         "panel_version": 3
       }
@@ -1736,6 +1924,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 8.3,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2,
+        "panel_version": 3
       }
     ],
     "OpenZeppelin": [
@@ -1787,6 +1980,11 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 10.4,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 6.2,
         "panel_version": 3
       }
     ],
@@ -1840,6 +2038,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 12.4,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 10.4,
+        "panel_version": 3
       }
     ],
     "Polygon": [
@@ -1891,6 +2094,11 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 18.8,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 18.9,
         "panel_version": 3
       }
     ],
@@ -1944,6 +2152,11 @@
         "measured_at": "2026-10-12",
         "visibility_score": 14.6,
         "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.6,
+        "panel_version": 3
       }
     ],
     "Uniswap": [
@@ -1995,6 +2208,11 @@
       {
         "measured_at": "2026-10-12",
         "visibility_score": 18.7,
+        "panel_version": 3
+      },
+      {
+        "measured_at": "2026-10-19",
+        "visibility_score": 14.5,
         "panel_version": 3
       }
     ]
