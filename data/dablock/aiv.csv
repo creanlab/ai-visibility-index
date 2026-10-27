@@ -1,25 +1,25 @@
-rank,brand,domain,visibility_score,visibility_openai,visibility_perplexity,visibility_gemini,commercial_intent,quadrant,measured_at,method
-1,Coinbase,coinbase.com,39.7,50.0,12.5,56.2,88,Visibility gap,2026-10-19,sonar
-2,Binance,binance.com,33.3,37.5,6.2,56.2,86,Visibility gap,2026-10-19,sonar
-3,Kraken,kraken.com,31.3,37.5,12.5,43.8,84,Visibility gap,2026-10-19,sonar
-4,Arbitrum,arbitrum.io,27.1,31.2,12.5,37.5,48,Low performance,2026-10-19,sonar
-5,Ledger,ledger.com,22.9,18.8,18.8,31.2,82,Visibility gap,2026-10-19,sonar
-6,Polygon,polygon.technology,18.9,31.2,0.0,25.0,50,Low performance,2026-10-19,sonar
-7,CoinGecko,coingecko.com,14.7,25.0,6.2,12.5,52,Low performance,2026-10-19,sonar
-8,Trezor,trezor.io,14.6,12.5,12.5,18.8,78,Visibility gap,2026-10-19,sonar
-9,Koinly,koinly.io,14.6,18.8,12.5,12.5,86,Visibility gap,2026-10-19,sonar
-10,CoinTracker,cointracker.io,14.6,12.5,12.5,18.8,84,Visibility gap,2026-10-19,sonar
-11,Uniswap,uniswap.org,14.5,12.5,6.2,25.0,60,Low performance,2026-10-19,sonar
-12,MetaMask,metamask.io,10.5,12.5,0.0,18.8,62,Low performance,2026-10-19,sonar
-13,Phantom,phantom.com,10.4,6.2,6.2,18.8,58,Low performance,2026-10-19,sonar
-14,CoinMarketCap,coinmarketcap.com,10.4,12.5,6.2,12.5,52,Low performance,2026-10-19,sonar
-15,Aave,aave.com,8.3,12.5,6.2,6.2,58,Low performance,2026-10-19,sonar
-16,Lido,lido.fi,6.2,6.2,0.0,12.5,55,Low performance,2026-10-19,sonar
-17,OpenSea,opensea.io,6.2,6.2,6.2,6.2,57,Low performance,2026-10-19,sonar
-18,Chainalysis,chainalysis.com,6.2,6.2,6.2,6.2,90,Visibility gap,2026-10-19,sonar
-19,OpenZeppelin,openzeppelin.com,6.2,6.2,6.2,6.2,76,Visibility gap,2026-10-19,sonar
-20,DefiLlama,defillama.com,4.2,6.2,0.0,6.2,40,Low performance,2026-10-19,sonar
-21,CertiK,certik.com,4.2,6.2,0.0,6.2,80,Visibility gap,2026-10-19,sonar
-22,Dune Analytics,dune.com,2.1,6.2,0.0,0.0,62,Low performance,2026-10-19,sonar
-23,Etherscan,etherscan.io,2.0,0.0,0.0,6.2,38,Low performance,2026-10-19,sonar
-24,MoonPay,moonpay.com,2.0,0.0,0.0,6.2,74,Visibility gap,2026-10-19,sonar
+rank,brand,domain,visibility_score,visibility_openai,visibility_perplexity,commercial_intent,quadrant,measured_at,method
+1,Coinbase,coinbase.com,28.1,43.8,12.5,88,Visibility gap,2026-10-26,sonar
+2,Binance,binance.com,21.9,37.5,6.2,86,Visibility gap,2026-10-26,sonar
+3,Kraken,kraken.com,21.9,37.5,6.2,84,Visibility gap,2026-10-26,sonar
+4,Ledger,ledger.com,18.8,18.8,18.8,82,Visibility gap,2026-10-26,sonar
+5,Arbitrum,arbitrum.io,15.7,18.8,12.5,48,Low performance,2026-10-26,sonar
+6,Trezor,trezor.io,12.5,12.5,12.5,78,Visibility gap,2026-10-26,sonar
+7,CoinGecko,coingecko.com,12.5,18.8,6.2,52,Low performance,2026-10-26,sonar
+8,Koinly,koinly.io,12.5,12.5,12.5,86,Visibility gap,2026-10-26,sonar
+9,MetaMask,metamask.io,9.4,18.8,0.0,62,Low performance,2026-10-26,sonar
+10,Polygon,polygon.technology,9.4,18.8,0.0,50,Low performance,2026-10-26,sonar
+11,Phantom,phantom.com,9.3,12.5,6.2,58,Low performance,2026-10-26,sonar
+12,Uniswap,uniswap.org,9.3,12.5,6.2,60,Low performance,2026-10-26,sonar
+13,CoinTracker,cointracker.io,9.3,12.5,6.2,84,Visibility gap,2026-10-26,sonar
+14,Aave,aave.com,6.2,6.2,6.2,58,Low performance,2026-10-26,sonar
+15,Lido,lido.fi,6.2,6.2,6.2,55,Low performance,2026-10-26,sonar
+16,OpenSea,opensea.io,6.2,6.2,6.2,57,Low performance,2026-10-26,sonar
+17,CoinMarketCap,coinmarketcap.com,6.2,6.2,6.2,52,Low performance,2026-10-26,sonar
+18,Chainalysis,chainalysis.com,6.2,6.2,6.2,90,Visibility gap,2026-10-26,sonar
+19,OpenZeppelin,openzeppelin.com,6.2,6.2,6.2,76,Visibility gap,2026-10-26,sonar
+20,DefiLlama,defillama.com,3.1,6.2,0.0,40,Low performance,2026-10-26,sonar
+21,Etherscan,etherscan.io,3.1,6.2,0.0,38,Low performance,2026-10-26,sonar
+22,CertiK,certik.com,3.1,6.2,0.0,80,Visibility gap,2026-10-26,sonar
+23,Dune Analytics,dune.com,0.0,0.0,0.0,62,Low performance,2026-10-26,sonar
+24,MoonPay,moonpay.com,0.0,0.0,0.0,74,Visibility gap,2026-10-26,sonar
