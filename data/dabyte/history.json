@@ -17,7 +17,8 @@
     "2026-10-19",
     "2026-10-26",
     "2026-11-02",
-    "2026-11-09"
+    "2026-11-09",
+    "2026-11-16"
   ],
   "panel_versions": {
     "2026-07-23": 1,
@@ -35,7 +36,8 @@
     "2026-10-19": 3,
     "2026-10-26": 4,
     "2026-11-02": 4,
-    "2026-11-09": 4
+    "2026-11-09": 4,
+    "2026-11-16": 4
   },
   "note": "Full published history of share-of-answer per brand. Each measurement is also available verbatim at /archive/<date>.json. Values are the percentage of the fixed prompt panel in which an engine named the brand. `series` is the comparable run of the current panel version only; `series_full` carries every published point with its panel_version — do not chart across version breaks.",
   "license": "CC-BY-4.0",
@@ -52,6 +54,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 15.7
       }
     ],
     "Amplitude": [
@@ -66,6 +72,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 9.3
       }
     ],
     "Asana": [
@@ -80,6 +90,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 9.3
       }
     ],
     "ClickUp": [
@@ -94,6 +108,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 15.6
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 6.2
       }
     ],
     "Copy.ai": [
@@ -107,6 +125,10 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 3.1
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 3.1
       }
     ],
@@ -122,6 +144,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 12.5
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 12.5
       }
     ],
     "GitHub Copilot": [
@@ -135,6 +161,10 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 15.7
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 15.7
       }
     ],
@@ -150,6 +180,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 18.8
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 21.9
       }
     ],
     "Intercom": [
@@ -163,6 +197,10 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 9.3
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 9.3
       }
     ],
@@ -178,6 +216,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 6.2
       }
     ],
     "Linear": [
@@ -191,6 +233,10 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 6.2
       }
     ],
@@ -206,6 +252,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 12.5
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 12.5
       }
     ],
     "Monday.com": [
@@ -219,6 +269,10 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 9.3
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 9.3
       }
     ],
@@ -234,6 +288,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 31.2
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 31.2
       }
     ],
     "Otter.ai": [
@@ -248,6 +306,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 6.2
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 3.1
       }
     ],
     "Retool": [
@@ -261,6 +323,10 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 9.3
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 9.3
       }
     ],
@@ -276,6 +342,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 31.3
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 28.1
       }
     ],
     "Slack": [
@@ -289,6 +359,10 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 25.0
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 25.0
       }
     ],
@@ -304,6 +378,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 3.1
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 3.1
       }
     ],
     "Zapier": [
@@ -318,6 +396,10 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 18.7
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 21.9
       }
     ]
   },
@@ -402,6 +484,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 6.2,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 15.7,
+        "panel_version": 4
       }
     ],
     "Amplitude": [
@@ -483,6 +570,11 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 6.2,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 9.3,
         "panel_version": 4
       }
     ],
@@ -566,6 +658,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 6.2,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 9.3,
+        "panel_version": 4
       }
     ],
     "ClickUp": [
@@ -648,6 +745,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 15.6,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 6.2,
+        "panel_version": 4
       }
     ],
     "Copy.ai": [
@@ -728,6 +830,11 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 3.1,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 3.1,
         "panel_version": 4
       }
@@ -812,6 +919,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 12.5,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 12.5,
+        "panel_version": 4
       }
     ],
     "GitHub Copilot": [
@@ -892,6 +1004,11 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 15.7,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 15.7,
         "panel_version": 4
       }
@@ -976,6 +1093,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 18.8,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 21.9,
+        "panel_version": 4
       }
     ],
     "Intercom": [
@@ -1056,6 +1178,11 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 9.3,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 9.3,
         "panel_version": 4
       }
@@ -1140,6 +1267,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 6.2,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 6.2,
+        "panel_version": 4
       }
     ],
     "Linear": [
@@ -1220,6 +1352,11 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 6.2,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 6.2,
         "panel_version": 4
       }
@@ -1304,6 +1441,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 12.5,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 12.5,
+        "panel_version": 4
       }
     ],
     "Monday.com": [
@@ -1384,6 +1526,11 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 9.3,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 9.3,
         "panel_version": 4
       }
@@ -1468,6 +1615,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 31.2,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 31.2,
+        "panel_version": 4
       }
     ],
     "Otter.ai": [
@@ -1550,6 +1702,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 6.2,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 3.1,
+        "panel_version": 4
       }
     ],
     "Retool": [
@@ -1630,6 +1787,11 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 9.3,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 9.3,
         "panel_version": 4
       }
@@ -1714,6 +1876,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 31.3,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 28.1,
+        "panel_version": 4
       }
     ],
     "Slack": [
@@ -1794,6 +1961,11 @@
       },
       {
         "measured_at": "2026-11-09",
+        "visibility_score": 25.0,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
         "visibility_score": 25.0,
         "panel_version": 4
       }
@@ -1878,6 +2050,11 @@
         "measured_at": "2026-11-09",
         "visibility_score": 3.1,
         "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 3.1,
+        "panel_version": 4
       }
     ],
     "Zapier": [
@@ -1959,6 +2136,11 @@
       {
         "measured_at": "2026-11-09",
         "visibility_score": 18.7,
+        "panel_version": 4
+      },
+      {
+        "measured_at": "2026-11-16",
+        "visibility_score": 21.9,
         "panel_version": 4
       }
     ]

@@ -1,6 +1,6 @@
 {
   "source": "DABLOCK rankings, dablock.ai",
-  "measured_at": "2026-11-09",
+  "measured_at": "2026-11-16",
   "engines": [
     "openai",
     "perplexity"
@@ -15,51 +15,18 @@
       "items": [
         {
           "rank": 1,
-          "brand": "Kraken",
-          "value": "31.3%",
-          "visibility_score": 31.3,
+          "brand": "Coinbase",
+          "value": "28.1%",
+          "visibility_score": 28.1,
           "per_engine": {
             "openai": 43.8,
-            "perplexity": 18.8
+            "perplexity": 12.5
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 2,
-          "brand": "Coinbase",
-          "value": "31.2%",
-          "visibility_score": 31.2,
-          "per_engine": {
-            "openai": 50.0,
-            "perplexity": 12.5
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 3,
           "brand": "Ledger",
-          "value": "25.0%",
-          "visibility_score": 25.0,
-          "per_engine": {
-            "openai": 31.2,
-            "perplexity": 18.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 4,
-          "brand": "Arbitrum",
-          "value": "18.8%",
-          "visibility_score": 18.8,
-          "per_engine": {
-            "openai": 25.0,
-            "perplexity": 12.5
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 5,
-          "brand": "Trezor",
           "value": "18.8%",
           "visibility_score": 18.8,
           "per_engine": {
@@ -69,8 +36,8 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 6,
-          "brand": "Binance",
+          "rank": 3,
+          "brand": "Kraken",
           "value": "18.7%",
           "visibility_score": 18.7,
           "per_engine": {
@@ -80,7 +47,18 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 7,
+          "rank": 4,
+          "brand": "Arbitrum",
+          "value": "15.7%",
+          "visibility_score": 15.7,
+          "per_engine": {
+            "openai": 18.8,
+            "perplexity": 12.5
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 5,
           "brand": "CoinGecko",
           "value": "15.7%",
           "visibility_score": 15.7,
@@ -91,18 +69,29 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 8,
+          "rank": 6,
           "brand": "CoinMarketCap",
-          "value": "12.5%",
-          "visibility_score": 12.5,
+          "value": "15.7%",
+          "visibility_score": 15.7,
           "per_engine": {
-            "openai": 12.5,
+            "openai": 18.8,
             "perplexity": 12.5
           },
           "quadrant": "Low performance"
         },
         {
-          "rank": 9,
+          "rank": 7,
+          "brand": "Binance",
+          "value": "15.6%",
+          "visibility_score": 15.6,
+          "per_engine": {
+            "openai": 25.0,
+            "perplexity": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 8,
           "brand": "CoinTracker",
           "value": "12.5%",
           "visibility_score": 12.5,
@@ -113,8 +102,30 @@
           "quadrant": "Visibility gap"
         },
         {
+          "rank": 9,
+          "brand": "MetaMask",
+          "value": "12.5%",
+          "visibility_score": 12.5,
+          "per_engine": {
+            "openai": 18.8,
+            "perplexity": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
           "rank": 10,
-          "brand": "Koinly",
+          "brand": "Polygon",
+          "value": "12.5%",
+          "visibility_score": 12.5,
+          "per_engine": {
+            "openai": 18.8,
+            "perplexity": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 11,
+          "brand": "Trezor",
           "value": "12.5%",
           "visibility_score": 12.5,
           "per_engine": {
@@ -124,41 +135,8 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 11,
-          "brand": "Phantom",
-          "value": "12.5%",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 18.8,
-            "perplexity": 6.2
-          },
-          "quadrant": "Low performance"
-        },
-        {
           "rank": 12,
-          "brand": "Polygon",
-          "value": "12.5%",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 25.0,
-            "perplexity": 0.0
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 13,
-          "brand": "MetaMask",
-          "value": "9.4%",
-          "visibility_score": 9.4,
-          "per_engine": {
-            "openai": 18.8,
-            "perplexity": 0.0
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 14,
-          "brand": "Uniswap",
+          "brand": "Aave",
           "value": "9.3%",
           "visibility_score": 9.3,
           "per_engine": {
@@ -168,18 +146,29 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 15,
-          "brand": "Aave",
+          "rank": 13,
+          "brand": "Koinly",
+          "value": "9.3%",
+          "visibility_score": 9.3,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 14,
+          "brand": "Chainalysis",
           "value": "6.2%",
           "visibility_score": 6.2,
           "per_engine": {
             "openai": 6.2,
             "perplexity": 6.2
           },
-          "quadrant": "Low performance"
+          "quadrant": "Visibility gap"
         },
         {
-          "rank": 16,
+          "rank": 15,
           "brand": "DefiLlama",
           "value": "6.2%",
           "visibility_score": 6.2,
@@ -190,18 +179,7 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 17,
-          "brand": "Lido",
-          "value": "6.2%",
-          "visibility_score": 6.2,
-          "per_engine": {
-            "openai": 6.2,
-            "perplexity": 6.2
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 18,
+          "rank": 16,
           "brand": "OpenSea",
           "value": "6.2%",
           "visibility_score": 6.2,
@@ -212,7 +190,7 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 19,
+          "rank": 17,
           "brand": "OpenZeppelin",
           "value": "6.2%",
           "visibility_score": 6.2,
@@ -223,8 +201,30 @@
           "quadrant": "Visibility gap"
         },
         {
+          "rank": 18,
+          "brand": "Phantom",
+          "value": "6.2%",
+          "visibility_score": 6.2,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 19,
+          "brand": "Uniswap",
+          "value": "6.2%",
+          "visibility_score": 6.2,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
           "rank": 20,
-          "brand": "Chainalysis",
+          "brand": "CertiK",
           "value": "3.1%",
           "visibility_score": 3.1,
           "per_engine": {
@@ -243,7 +243,18 @@
         {
           "rank": 1,
           "brand": "Chainalysis",
-          "value": "87",
+          "value": "84",
+          "visibility_score": 6.2,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 2,
+          "brand": "CertiK",
+          "value": "77",
           "visibility_score": 3.1,
           "per_engine": {
             "openai": 6.2,
@@ -252,9 +263,20 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 2,
-          "brand": "CertiK",
-          "value": "80",
+          "rank": 3,
+          "brand": "Koinly",
+          "value": "77",
+          "visibility_score": 9.3,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 4,
+          "brand": "MoonPay",
+          "value": "74",
           "visibility_score": 0.0,
           "per_engine": {
             "openai": 0.0,
@@ -263,18 +285,7 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 3,
-          "brand": "Koinly",
-          "value": "74",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 4,
+          "rank": 5,
           "brand": "CoinTracker",
           "value": "72",
           "visibility_score": 12.5,
@@ -285,18 +296,18 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 5,
-          "brand": "MoonPay",
-          "value": "71",
-          "visibility_score": 3.1,
+          "rank": 6,
+          "brand": "Binance",
+          "value": "70",
+          "visibility_score": 15.6,
           "per_engine": {
-            "openai": 6.2,
-            "perplexity": 0.0
+            "openai": 25.0,
+            "perplexity": 6.2
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 6,
+          "rank": 7,
           "brand": "OpenZeppelin",
           "value": "70",
           "visibility_score": 6.2,
@@ -307,9 +318,20 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 7,
-          "brand": "Binance",
-          "value": "67",
+          "rank": 8,
+          "brand": "Trezor",
+          "value": "66",
+          "visibility_score": 12.5,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 12.5
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 9,
+          "brand": "Kraken",
+          "value": "65",
           "visibility_score": 18.7,
           "per_engine": {
             "openai": 31.2,
@@ -318,7 +340,18 @@
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 8,
+          "rank": 10,
+          "brand": "Ledger",
+          "value": "63",
+          "visibility_score": 18.8,
+          "per_engine": {
+            "openai": 18.8,
+            "perplexity": 18.8
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 11,
           "brand": "Dune Analytics",
           "value": "62",
           "visibility_score": 0.0,
@@ -329,63 +362,41 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 9,
-          "brand": "Trezor",
-          "value": "59",
-          "visibility_score": 18.8,
-          "per_engine": {
-            "openai": 18.8,
-            "perplexity": 18.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 10,
-          "brand": "Ledger",
-          "value": "57",
-          "visibility_score": 25.0,
-          "per_engine": {
-            "openai": 31.2,
-            "perplexity": 18.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 11,
+          "rank": 12,
           "brand": "Coinbase",
-          "value": "57",
-          "visibility_score": 31.2,
+          "value": "60",
+          "visibility_score": 28.1,
           "per_engine": {
-            "openai": 50.0,
+            "openai": 43.8,
             "perplexity": 12.5
           },
           "quadrant": "Visibility gap"
         },
         {
-          "rank": 12,
-          "brand": "Kraken",
-          "value": "53",
-          "visibility_score": 31.3,
-          "per_engine": {
-            "openai": 43.8,
-            "perplexity": 18.8
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
           "rank": 13,
-          "brand": "MetaMask",
-          "value": "53",
-          "visibility_score": 9.4,
+          "brand": "Uniswap",
+          "value": "54",
+          "visibility_score": 6.2,
           "per_engine": {
-            "openai": 18.8,
-            "perplexity": 0.0
+            "openai": 6.2,
+            "perplexity": 6.2
           },
           "quadrant": "Low performance"
         },
         {
           "rank": 14,
-          "brand": "Aave",
+          "brand": "Lido",
+          "value": "52",
+          "visibility_score": 3.1,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 0.0
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 15,
+          "brand": "Phantom",
           "value": "52",
           "visibility_score": 6.2,
           "per_engine": {
@@ -395,7 +406,7 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 15,
+          "rank": 16,
           "brand": "OpenSea",
           "value": "51",
           "visibility_score": 6.2,
@@ -406,31 +417,9 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 16,
-          "brand": "Uniswap",
-          "value": "51",
-          "visibility_score": 9.3,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 6.2
-          },
-          "quadrant": "Low performance"
-        },
-        {
           "rank": 17,
-          "brand": "Lido",
-          "value": "49",
-          "visibility_score": 6.2,
-          "per_engine": {
-            "openai": 6.2,
-            "perplexity": 6.2
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 18,
-          "brand": "Phantom",
-          "value": "46",
+          "brand": "MetaMask",
+          "value": "50",
           "visibility_score": 12.5,
           "per_engine": {
             "openai": 18.8,
@@ -439,24 +428,35 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 19,
-          "brand": "CoinMarketCap",
-          "value": "40",
-          "visibility_score": 12.5,
+          "rank": 18,
+          "brand": "Aave",
+          "value": "49",
+          "visibility_score": 9.3,
           "per_engine": {
             "openai": 12.5,
-            "perplexity": 12.5
+            "perplexity": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 19,
+          "brand": "Polygon",
+          "value": "38",
+          "visibility_score": 12.5,
+          "per_engine": {
+            "openai": 18.8,
+            "perplexity": 6.2
           },
           "quadrant": "Low performance"
         },
         {
           "rank": 20,
-          "brand": "Polygon",
-          "value": "38",
-          "visibility_score": 12.5,
+          "brand": "CoinGecko",
+          "value": "36",
+          "visibility_score": 15.7,
           "per_engine": {
-            "openai": 25.0,
-            "perplexity": 0.0
+            "openai": 18.8,
+            "perplexity": 12.5
           },
           "quadrant": "Low performance"
         }
@@ -470,40 +470,40 @@
         {
           "rank": 1,
           "brand": "Kraken",
-          "value": "+9.4",
-          "visibility_score": 31.3,
+          "value": "-12.6",
+          "visibility_score": 18.7,
           "per_engine": {
-            "openai": 43.8,
-            "perplexity": 18.8
+            "openai": 31.2,
+            "perplexity": 6.2
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 2,
           "brand": "Phantom",
-          "value": "+6.3",
-          "visibility_score": 12.5,
+          "value": "-6.3",
+          "visibility_score": 6.2,
           "per_engine": {
-            "openai": 18.8,
+            "openai": 6.2,
             "perplexity": 6.2
           },
           "quadrant": "Low performance"
         },
         {
           "rank": 3,
-          "brand": "Polygon",
-          "value": "+6.3",
+          "brand": "Trezor",
+          "value": "-6.3",
           "visibility_score": 12.5,
           "per_engine": {
-            "openai": 25.0,
-            "perplexity": 0.0
+            "openai": 12.5,
+            "perplexity": 12.5
           },
-          "quadrant": "Low performance"
+          "quadrant": "Visibility gap"
         },
         {
           "rank": 4,
-          "brand": "Trezor",
-          "value": "+6.3",
+          "brand": "Ledger",
+          "value": "-6.2",
           "visibility_score": 18.8,
           "per_engine": {
             "openai": 18.8,
@@ -513,106 +513,29 @@
         },
         {
           "rank": 5,
-          "brand": "Coinbase",
-          "value": "+6.2",
-          "visibility_score": 31.2,
+          "brand": "CoinMarketCap",
+          "value": "+3.2",
+          "visibility_score": 15.7,
           "per_engine": {
-            "openai": 50.0,
+            "openai": 18.8,
             "perplexity": 12.5
           },
-          "quadrant": "Visibility gap"
+          "quadrant": "Low performance"
         },
         {
           "rank": 6,
-          "brand": "Ledger",
-          "value": "+6.2",
-          "visibility_score": 25.0,
+          "brand": "Koinly",
+          "value": "-3.2",
+          "visibility_score": 9.3,
           "per_engine": {
-            "openai": 31.2,
-            "perplexity": 18.8
+            "openai": 12.5,
+            "perplexity": 6.2
           },
           "quadrant": "Visibility gap"
         },
         {
           "rank": 7,
-          "brand": "Binance",
-          "value": "-3.2",
-          "visibility_score": 18.7,
-          "per_engine": {
-            "openai": 31.2,
-            "perplexity": 6.2
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 8,
-          "brand": "CertiK",
-          "value": "-3.1",
-          "visibility_score": 0.0,
-          "per_engine": {
-            "openai": 0.0,
-            "perplexity": 0.0
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 9,
-          "brand": "Chainalysis",
-          "value": "-3.1",
-          "visibility_score": 3.1,
-          "per_engine": {
-            "openai": 6.2,
-            "perplexity": 0.0
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 10,
-          "brand": "DefiLlama",
-          "value": "-3.1",
-          "visibility_score": 6.2,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 0.0
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 11,
-          "brand": "Etherscan",
-          "value": "+3.1",
-          "visibility_score": 3.1,
-          "per_engine": {
-            "openai": 6.2,
-            "perplexity": 0.0
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 12,
-          "brand": "Lido",
-          "value": "+3.1",
-          "visibility_score": 6.2,
-          "per_engine": {
-            "openai": 6.2,
-            "perplexity": 6.2
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 13,
-          "brand": "MoonPay",
-          "value": "+3.1",
-          "visibility_score": 3.1,
-          "per_engine": {
-            "openai": 6.2,
-            "perplexity": 0.0
-          },
-          "quadrant": "Visibility gap"
-        },
-        {
-          "rank": 14,
-          "brand": "Uniswap",
+          "brand": "Aave",
           "value": "+3.1",
           "visibility_score": 9.3,
           "per_engine": {
@@ -622,9 +545,9 @@
           "quadrant": "Low performance"
         },
         {
-          "rank": 15,
-          "brand": "CoinGecko",
-          "value": "+0.1",
+          "rank": 8,
+          "brand": "Arbitrum",
+          "value": "-3.1",
           "visibility_score": 15.7,
           "per_engine": {
             "openai": 18.8,
@@ -633,9 +556,86 @@
           "quadrant": "Low performance"
         },
         {
+          "rank": 9,
+          "brand": "Binance",
+          "value": "-3.1",
+          "visibility_score": 15.6,
+          "per_engine": {
+            "openai": 25.0,
+            "perplexity": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 10,
+          "brand": "CertiK",
+          "value": "+3.1",
+          "visibility_score": 3.1,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 0.0
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 11,
+          "brand": "Chainalysis",
+          "value": "+3.1",
+          "visibility_score": 6.2,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 6.2
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 12,
+          "brand": "Coinbase",
+          "value": "-3.1",
+          "visibility_score": 28.1,
+          "per_engine": {
+            "openai": 43.8,
+            "perplexity": 12.5
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 13,
+          "brand": "Lido",
+          "value": "-3.1",
+          "visibility_score": 3.1,
+          "per_engine": {
+            "openai": 6.2,
+            "perplexity": 0.0
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 14,
+          "brand": "MetaMask",
+          "value": "+3.1",
+          "visibility_score": 12.5,
+          "per_engine": {
+            "openai": 18.8,
+            "perplexity": 6.2
+          },
+          "quadrant": "Low performance"
+        },
+        {
+          "rank": 15,
+          "brand": "MoonPay",
+          "value": "-3.1",
+          "visibility_score": 0.0,
+          "per_engine": {
+            "openai": 0.0,
+            "perplexity": 0.0
+          },
+          "quadrant": "Visibility gap"
+        },
+        {
           "rank": 16,
-          "brand": "Aave",
-          "value": "+0.0",
+          "brand": "Uniswap",
+          "value": "-3.1",
           "visibility_score": 6.2,
           "per_engine": {
             "openai": 6.2,
@@ -645,28 +645,17 @@
         },
         {
           "rank": 17,
-          "brand": "Arbitrum",
+          "brand": "CoinGecko",
           "value": "+0.0",
-          "visibility_score": 18.8,
+          "visibility_score": 15.7,
           "per_engine": {
-            "openai": 25.0,
+            "openai": 18.8,
             "perplexity": 12.5
           },
           "quadrant": "Low performance"
         },
         {
           "rank": 18,
-          "brand": "CoinMarketCap",
-          "value": "+0.0",
-          "visibility_score": 12.5,
-          "per_engine": {
-            "openai": 12.5,
-            "perplexity": 12.5
-          },
-          "quadrant": "Low performance"
-        },
-        {
-          "rank": 19,
           "brand": "CoinTracker",
           "value": "+0.0",
           "visibility_score": 12.5,
@@ -675,6 +664,17 @@
             "perplexity": 12.5
           },
           "quadrant": "Visibility gap"
+        },
+        {
+          "rank": 19,
+          "brand": "DefiLlama",
+          "value": "+0.0",
+          "visibility_score": 6.2,
+          "per_engine": {
+            "openai": 12.5,
+            "perplexity": 0.0
+          },
+          "quadrant": "Low performance"
         },
         {
           "rank": 20,
